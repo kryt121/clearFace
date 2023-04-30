@@ -2,6 +2,8 @@ import Toybox.Graphics;
 import Toybox.Lang;
 import Toybox.System;
 import Toybox.WatchUi;
+using Toybox.System;
+using Toybox.Time.Gregorian;
 
 class clearFaceView extends WatchUi.WatchFace {
 
@@ -27,6 +29,19 @@ class clearFaceView extends WatchUi.WatchFace {
         var timeString = Lang.format("$1$ $2$", [clockTime.hour.format("%02d"), clockTime.min.format("%02d")]);
         var view = View.findDrawableById("TimeLabel") as Text;
         view.setText(timeString);
+
+        var view_battery=View.findDrawableById("Battery") as Text;
+        var stats = System.getSystemStats();
+        // System.println(stats);
+        var battery_string = stats.battery.format("%02d");
+        view_battery.setText(battery_string + "%");
+
+        var date = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
+
+        var day=["Su","Mo","Tu","We","Th","Fr","Sa"][date.day_of_week-1];
+        var dateString = date.year.format("%4d") + "-" + date.month.format("%02d") + "-" + date.day.format("%02d") + "/" + day ;
+        var view_date = View.findDrawableById("Date") as Text;
+        view_date.setText(dateString);
 
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
