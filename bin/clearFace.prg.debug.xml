@@ -19,25 +19,27 @@
         <entry filename="/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" id="9" lineNum="36" parent="globals/clearFaceView" pc="268435766" symbol="onUpdate"/>
         <entry filename="/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" id="9" lineNum="37" parent="globals/clearFaceView" pc="268435790" symbol="onUpdate"/>
         <entry filename="/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" id="9" lineNum="39" parent="globals/clearFaceView" pc="268435810" symbol="onUpdate"/>
-        <entry filename="/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" id="9" lineNum="41" parent="globals/clearFaceView" pc="268435849" symbol="onUpdate"/>
-        <entry filename="/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" id="9" lineNum="42" parent="globals/clearFaceView" pc="268435963" symbol="onUpdate"/>
-        <entry filename="/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" id="9" lineNum="43" parent="globals/clearFaceView" pc="268436054" symbol="onUpdate"/>
-        <entry filename="/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" id="9" lineNum="44" parent="globals/clearFaceView" pc="268436082" symbol="onUpdate"/>
-        <entry filename="/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" id="9" lineNum="47" parent="globals/clearFaceView" pc="268436096" symbol="onUpdate"/>
-        <entry filename="/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" id="10" lineNum="7" parent="globals/Rez" pc="268436121" symbol="&lt;init&gt;"/>
-        <entry filename="/home/kryt/dev/garmin/clearFace/source/clearFaceApp.mc" id="11" lineNum="5" parent="globals/clearFaceApp" pc="268436145" symbol="&lt;init&gt;"/>
-        <entry filename="/home/kryt/dev/garmin/clearFace/source/clearFaceApp.mc" id="12" lineNum="12" parent="globals/clearFaceApp" pc="268436164" symbol="onStart"/>
-        <entry filename="/home/kryt/dev/garmin/clearFace/source/clearFaceApp.mc" id="13" lineNum="20" parent="globals/clearFaceApp" pc="268436167" symbol="getInitialView"/>
-        <entry filename="/home/kryt/dev/garmin/clearFace/source/clearFaceApp.mc" id="13" lineNum="21" parent="globals/clearFaceApp" pc="268436169" symbol="getInitialView"/>
-        <entry filename="/home/kryt/dev/garmin/clearFace/source/clearFaceApp.mc" id="14" lineNum="7" parent="globals/clearFaceApp" pc="268436210" symbol="initialize"/>
-        <entry filename="/home/kryt/dev/garmin/clearFace/source/clearFaceApp.mc" id="14" lineNum="8" parent="globals/clearFaceApp" pc="268436212" symbol="initialize"/>
-        <entry filename="/home/kryt/dev/garmin/clearFace/source/clearFaceApp.mc" id="15" lineNum="16" parent="globals/clearFaceApp" pc="268436231" symbol="onStop"/>
-        <entry filename="/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" id="16" lineNum="19" parent="globals/Rez/Layouts" pc="268436234" symbol="WatchFace"/>
-        <entry filename="/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" id="16" lineNum="20" parent="globals/Rez/Layouts" pc="268436246" symbol="WatchFace"/>
-        <entry filename="/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" id="16" lineNum="22" parent="globals/Rez/Layouts" pc="268436358" symbol="WatchFace"/>
-        <entry filename="/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" id="16" lineNum="24" parent="globals/Rez/Layouts" pc="268436493" symbol="WatchFace"/>
-        <entry filename="/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" id="16" lineNum="26" parent="globals/Rez/Layouts" pc="268436592" symbol="WatchFace"/>
-        <entry filename="/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" id="16" lineNum="28" parent="globals/Rez/Layouts" pc="268436691" symbol="WatchFace"/>
+        <entry filename="/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" id="9" lineNum="42" parent="globals/clearFaceView" pc="268435849" symbol="onUpdate"/>
+        <entry filename="/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" id="9" lineNum="43" parent="globals/clearFaceView" pc="268435931" symbol="onUpdate"/>
+        <entry filename="/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" id="9" lineNum="44" parent="globals/clearFaceView" pc="268435959" symbol="onUpdate"/>
+        <entry filename="/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" id="9" lineNum="46" parent="globals/clearFaceView" pc="268435973" symbol="onUpdate"/>
+        <entry filename="/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" id="9" lineNum="47" parent="globals/clearFaceView" pc="268436087" symbol="onUpdate"/>
+        <entry filename="/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" id="9" lineNum="48" parent="globals/clearFaceView" pc="268436115" symbol="onUpdate"/>
+        <entry filename="/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" id="9" lineNum="50" parent="globals/clearFaceView" pc="268436129" symbol="onUpdate"/>
+        <entry filename="/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" id="10" lineNum="7" parent="globals/Rez" pc="268436154" symbol="&lt;init&gt;"/>
+        <entry filename="/home/kryt/dev/garmin/clearFace/source/clearFaceApp.mc" id="11" lineNum="5" parent="globals/clearFaceApp" pc="268436178" symbol="&lt;init&gt;"/>
+        <entry filename="/home/kryt/dev/garmin/clearFace/source/clearFaceApp.mc" id="12" lineNum="12" parent="globals/clearFaceApp" pc="268436197" symbol="onStart"/>
+        <entry filename="/home/kryt/dev/garmin/clearFace/source/clearFaceApp.mc" id="13" lineNum="20" parent="globals/clearFaceApp" pc="268436200" symbol="getInitialView"/>
+        <entry filename="/home/kryt/dev/garmin/clearFace/source/clearFaceApp.mc" id="13" lineNum="21" parent="globals/clearFaceApp" pc="268436202" symbol="getInitialView"/>
+        <entry filename="/home/kryt/dev/garmin/clearFace/source/clearFaceApp.mc" id="14" lineNum="7" parent="globals/clearFaceApp" pc="268436243" symbol="initialize"/>
+        <entry filename="/home/kryt/dev/garmin/clearFace/source/clearFaceApp.mc" id="14" lineNum="8" parent="globals/clearFaceApp" pc="268436245" symbol="initialize"/>
+        <entry filename="/home/kryt/dev/garmin/clearFace/source/clearFaceApp.mc" id="15" lineNum="16" parent="globals/clearFaceApp" pc="268436264" symbol="onStop"/>
+        <entry filename="/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" id="16" lineNum="19" parent="globals/Rez/Layouts" pc="268436267" symbol="WatchFace"/>
+        <entry filename="/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" id="16" lineNum="20" parent="globals/Rez/Layouts" pc="268436279" symbol="WatchFace"/>
+        <entry filename="/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" id="16" lineNum="22" parent="globals/Rez/Layouts" pc="268436391" symbol="WatchFace"/>
+        <entry filename="/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" id="16" lineNum="24" parent="globals/Rez/Layouts" pc="268436503" symbol="WatchFace"/>
+        <entry filename="/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" id="16" lineNum="26" parent="globals/Rez/Layouts" pc="268436638" symbol="WatchFace"/>
+        <entry filename="/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" id="16" lineNum="28" parent="globals/Rez/Layouts" pc="268436737" symbol="WatchFace"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
@@ -89,22 +91,23 @@
     </symbolTable>
     <localVars>
         <entry arg="true" endPc="268435548" name="dc" stackId="1" startPc="268435505"/>
-        <entry arg="true" endPc="268436120" name="dc" stackId="1" startPc="268435570"/>
-        <entry endPc="268436119" name="clockTime" stackId="2" startPc="268435574"/>
-        <entry endPc="268436119" name="timeString" stackId="3" startPc="268435574"/>
-        <entry endPc="268436119" name="view" stackId="4" startPc="268435574"/>
-        <entry endPc="268436119" name="view_battery" stackId="5" startPc="268435574"/>
-        <entry endPc="268436119" name="stats" stackId="6" startPc="268435574"/>
-        <entry endPc="268436119" name="battery_string" stackId="7" startPc="268435574"/>
-        <entry endPc="268436119" name="date" stackId="8" startPc="268435574"/>
-        <entry endPc="268436119" name="day" stackId="9" startPc="268435574"/>
-        <entry endPc="268436119" name="dateString" stackId="10" startPc="268435574"/>
-        <entry endPc="268436119" name="view_date" stackId="11" startPc="268435574"/>
-        <entry arg="true" endPc="268436737" name="dc" stackId="1" startPc="268436234"/>
-        <entry endPc="268436737" name="rez_cmp_local_text_Date" stackId="2" startPc="268436246"/>
-        <entry endPc="268436737" name="rez_cmp_local_text_TimeLabel" stackId="3" startPc="268436246"/>
-        <entry endPc="268436737" name="rez_cmp_local_text_DayOfTheWeek" stackId="4" startPc="268436246"/>
-        <entry endPc="268436737" name="rez_cmp_local_text_Battery" stackId="5" startPc="268436246"/>
+        <entry arg="true" endPc="268436153" name="dc" stackId="1" startPc="268435570"/>
+        <entry endPc="268436152" name="clockTime" stackId="2" startPc="268435574"/>
+        <entry endPc="268436152" name="timeString" stackId="3" startPc="268435574"/>
+        <entry endPc="268436152" name="view" stackId="4" startPc="268435574"/>
+        <entry endPc="268436152" name="view_battery" stackId="5" startPc="268435574"/>
+        <entry endPc="268436152" name="stats" stackId="6" startPc="268435574"/>
+        <entry endPc="268436152" name="battery_string" stackId="7" startPc="268435574"/>
+        <entry endPc="268436152" name="date" stackId="8" startPc="268435574"/>
+        <entry endPc="268436152" name="dateString" stackId="9" startPc="268435574"/>
+        <entry endPc="268436152" name="view_date" stackId="10" startPc="268435574"/>
+        <entry endPc="268436152" name="day" stackId="11" startPc="268435574"/>
+        <entry endPc="268436152" name="view_day_of_week" stackId="12" startPc="268435574"/>
+        <entry arg="true" endPc="268436783" name="dc" stackId="1" startPc="268436267"/>
+        <entry endPc="268436783" name="rez_cmp_local_text_DayOfWeek" stackId="2" startPc="268436279"/>
+        <entry endPc="268436783" name="rez_cmp_local_text_Date" stackId="3" startPc="268436279"/>
+        <entry endPc="268436783" name="rez_cmp_local_text_TimeLabel" stackId="4" startPc="268436279"/>
+        <entry endPc="268436783" name="rez_cmp_local_text_Battery" stackId="5" startPc="268436279"/>
     </localVars>
     <annotations>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
@@ -148,27 +151,27 @@
         <functionEntry accessMode="public" name="onHide" parent="clearFaceView">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436120" name="onUpdate" parent="clearFaceView" startPc="268435570">
+        <functionEntry accessMode="public" endPc="268436153" name="onUpdate" parent="clearFaceView" startPc="268435570">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436144" name="&lt;init&gt;" parent="Rez" startPc="268436121">
+        <functionEntry accessMode="public" endPc="268436177" name="&lt;init&gt;" parent="Rez" startPc="268436154">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436163" name="&lt;init&gt;" parent="clearFaceApp" startPc="268436145">
+        <functionEntry accessMode="public" endPc="268436196" name="&lt;init&gt;" parent="clearFaceApp" startPc="268436178">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436166" name="onStart" parent="clearFaceApp" startPc="268436164">
+        <functionEntry accessMode="public" endPc="268436199" name="onStart" parent="clearFaceApp" startPc="268436197">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436209" name="getInitialView" parent="clearFaceApp" startPc="268436167">
+        <functionEntry accessMode="public" endPc="268436242" name="getInitialView" parent="clearFaceApp" startPc="268436200">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436230" name="initialize" parent="clearFaceApp" startPc="268436210">
+        <functionEntry accessMode="public" endPc="268436263" name="initialize" parent="clearFaceApp" startPc="268436243">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436233" name="onStop" parent="clearFaceApp" startPc="268436231">
+        <functionEntry accessMode="public" endPc="268436266" name="onStop" parent="clearFaceApp" startPc="268436264">
             <param id="state"/>
             <documentation/>
         </functionEntry>
@@ -190,7 +193,7 @@
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="JsonData">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436737" name="WatchFace" parent="Layouts" startPc="268436234">
+        <functionEntry accessMode="public" endPc="268436783" name="WatchFace" parent="Layouts" startPc="268436267">
             <param id="dc"/>
             <documentation/>
         </functionEntry>

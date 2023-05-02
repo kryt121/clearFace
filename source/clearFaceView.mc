@@ -38,11 +38,14 @@ class clearFaceView extends WatchUi.WatchFace {
 
         var date = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
 
-        var day=["Su","Mo","Tu","We","Th","Fr","Sa"][date.day_of_week-1];
-        var dateString = date.year.format("%4d") + "-" + date.month.format("%02d") + "-" + date.day.format("%02d") + "/" + day ;
+        
+        var dateString = date.year.format("%4d") + "-" + date.month.format("%02d") + "-" + date.day.format("%02d")  ;
         var view_date = View.findDrawableById("Date") as Text;
         view_date.setText(dateString);
 
+        var day=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"][date.day_of_week-1];
+        var view_day_of_week = View.findDrawableById("DayOfWeek") as Text;
+        view_day_of_week.setText(day);
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
     }
