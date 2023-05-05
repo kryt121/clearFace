@@ -4,6 +4,7 @@ import Toybox.System;
 import Toybox.WatchUi;
 using Toybox.System;
 using Toybox.Time.Gregorian;
+using Toybox.ActivityMonitor;
 
 class clearFaceView extends WatchUi.WatchFace {
 
@@ -37,7 +38,6 @@ class clearFaceView extends WatchUi.WatchFace {
         view_battery.setText(battery_string + "%");
 
         var date = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
-
         
         var dateString = date.year.format("%4d") + "-" + date.month.format("%02d") + "-" + date.day.format("%02d")  ;
         var view_date = View.findDrawableById("Date") as Text;
@@ -46,6 +46,13 @@ class clearFaceView extends WatchUi.WatchFace {
         var day=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"][date.day_of_week-1];
         var view_day_of_week = View.findDrawableById("DayOfWeek") as Text;
         view_day_of_week.setText(day);
+        //tutaj wyswietlimy ile godzin do wypoczynku
+        var activity_stats = ActivityMonitor.getInfo();
+        var recoveryString=activity_stats.timeToRecovery;
+        var floorsString=activity_stats.floorsClimbed;
+        var stepsString=activity_stats.steps/1000;
+        var view_recovery = View.findDrawableById("Recovery") as Text;
+        view_recovery.setText(recoveryString+"H "+floorsString+"F "+stepsString+"kS");
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
     }
