@@ -4,9 +4,55 @@ import Toybox.System;
 import Toybox.WatchUi;
 using Toybox.System;
 using Toybox.Time.Gregorian;
+using Toybox.Time.Gregorian as Date;
 using Toybox.ActivityMonitor;
 
 class clearFaceView extends WatchUi.WatchFace {
+    function iso_week_number(year, month, day) {
+            var first_day_of_year = julian_day(year, 1, 1);
+            var given_day_of_year = julian_day(year, month, day);
+            var day_of_week = (first_day_of_year + 3) % 7; 
+            var week_of_year = (given_day_of_year - first_day_of_year + day_of_week + 4) / 7;
+            if (week_of_year == 53) {
+                if (day_of_week == 6) {
+                    return week_of_year;
+                } else if (day_of_week == 5 && is_leap_year(year)) {
+                    return week_of_year;
+                } else {
+                    return 1;
+                }
+            }
+            else if (week_of_year == 0) {
+                first_day_of_year = julian_day(year - 1, 1, 1);
+                day_of_week = (first_day_of_year + 3) % 7;
+                return (given_day_of_year - first_day_of_year + day_of_week + 4) / 7;
+            }
+            else {
+                return week_of_year;
+            }
+        }
+        
+        
+        private function julian_day(year, month, day) {
+            var a = (14 - month) / 12;
+            var y = (year + 4800 - a);
+            var m = (month + 12 * a - 3);
+            return day + ((153 * m + 2) / 5) + (365 * y) + (y / 4) - (y / 100) + (y / 400) - 32045;
+        }
+        
+        
+        function is_leap_year(year) {
+            if (year % 4 != 0) {
+                return false;
+            }	else if (year % 100 != 0) {
+                return true;
+            }else if (year % 400 == 0) {
+            return true;
+            }
+            return false;
+        }
+
+
 
     function initialize() {
         WatchFace.initialize();
@@ -33,13 +79,17 @@ class clearFaceView extends WatchUi.WatchFace {
 
         var view_battery=View.findDrawableById("Battery") as Text;
         var stats = System.getSystemStats();
-        // System.println(stats);
         var battery_string = stats.battery.format("%02d");
         view_battery.setText(battery_string + "%");
-
-        var date = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
+        //data
         
-        var dateString = date.year.format("%4d") + "-" + date.month.format("%02d") + "-" + date.day.format("%02d")  ;
+        
+        var now = Time.now();
+		//var date_long = Date.info(now, Time.FORMAT_LONG);
+        var date = Gregorian.info(now, Time.FORMAT_SHORT);
+        var week_num = iso_week_number(date.year, date.month, date.day);
+        //var week_num="18";
+        var dateString = date.year.format("%4d").substring(2, 4) + "-" + date.month.format("%02d") + "-" + date.day.format("%02d")+" W"+week_num ;
         var view_date = View.findDrawableById("Date") as Text;
         view_date.setText(dateString);
 

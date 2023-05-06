@@ -11,29 +11,304 @@ using Toybox.System;
 [ @file = "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc"; @line = 6; ]
 using Toybox.Time.Gregorian;
 [ @file = "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc"; @line = 7; ]
+using Toybox.Time.Gregorian as :Date;
+[ @file = "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc"; @line = 8; ]
 using Toybox.ActivityMonitor;
-[ @file = "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc"; @line = 9; ]
+[ @file = "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc"; @line = 10; ]
 class clearFaceView extends WatchUi.WatchFace{
-    [ @file = "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc"; @line = 9; ]
+    [ @file = "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc"; @line = 10; ]
     <init> {
     }
-    [ @file = "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc"; @line = 9; ]
+    [ @file = "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc"; @line = 10; ]
     static
     <init> {
     }
     [ @file = "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc"; @line = 11; ]
+    function iso_week_number(year, month, day) {
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_11_47_start:
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 12 12 ]
+        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_11_47_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_11_47_stop" ]
+        %first_day_of_year.1 = local;
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :julian_day;
+        %tmp.4 = lgetv %year;
+        %tmp.5 = 1;
+        %tmp.6 = 1;
+        %tmp.7 = invoke %tmp.1 %tmp.2(%tmp.4, %tmp.5, %tmp.6);
+        lputv %first_day_of_year.1 %tmp.7;
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 13 12 ]
+        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_11_47_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_11_47_stop" ]
+        %given_day_of_year.2 = local;
+        %tmp.8 = self;
+        %tmp.9 = getv function %tmp.8 :julian_day;
+        %tmp.11 = lgetv %year;
+        %tmp.13 = lgetv %month;
+        %tmp.15 = lgetv %day;
+        %tmp.16 = invoke %tmp.8 %tmp.9(%tmp.11, %tmp.13, %tmp.15);
+        lputv %given_day_of_year.2 %tmp.16;
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 14 12 ]
+        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_11_47_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_11_47_stop" ]
+        %day_of_week.3 = local;
+        %tmp.18 = lgetv %first_day_of_year.1;
+        %tmp.19 = 3;
+        %tmp.20 = add %tmp.18 %tmp.19;
+        %tmp.21 = 7;
+        %tmp.22 = mod %tmp.20 %tmp.21;
+        lputv %day_of_week.3 %tmp.22;
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 15 12 ]
+        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_11_47_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_11_47_stop" ]
+        %week_of_year.4 = local;
+        %tmp.24 = lgetv %given_day_of_year.2;
+        %tmp.26 = lgetv %first_day_of_year.1;
+        %tmp.27 = sub %tmp.24 %tmp.26;
+        %tmp.29 = lgetv %day_of_week.3;
+        %tmp.30 = add %tmp.27 %tmp.29;
+        %tmp.31 = 4;
+        %tmp.32 = add %tmp.30 %tmp.31;
+        %tmp.33 = 7;
+        %tmp.34 = div %tmp.32 %tmp.33;
+        lputv %week_of_year.4 %tmp.34;
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 16 12 ]
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_16_12_if_stmt:
+        %tmp.36 = lgetv %week_of_year.4;
+        %tmp.37 = 53;
+        %tmp.38 = eq %tmp.36 %tmp.37;
+        bf %tmp.38 @_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_16_12_if_false;
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_16_12_if_true:
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_16_36_start:
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 17 16 ]
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_17_16_if_stmt:
+        %tmp.40 = lgetv %day_of_week.3;
+        %tmp.41 = 6;
+        %tmp.42 = eq %tmp.40 %tmp.41;
+        bf %tmp.42 @_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_17_16_if_false;
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_17_16_if_true:
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_17_38_start:
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 18 20 ]
+        %tmp.44 = lgetv %week_of_year.4;
+        ret %tmp.44;
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_17_38_stop:
+        goto @_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_17_16_if_end;
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_17_16_if_false:
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 19 23 ]
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_19_23_if_stmt:
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_19_27_begin:
+        %tmp.46 = lgetv %day_of_week.3;
+        %tmp.47 = 5;
+        %tmp.48 = eq %tmp.46 %tmp.47;
+        %tmp.49 = dup %tmp.48;
+        bf %tmp.49 @_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_19_47_end;
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_19_47_true:
+        %tmp.50 = self;
+        %tmp.51 = getv function %tmp.50 :is_leap_year;
+        %tmp.53 = lgetv %year;
+        %tmp.54 = invoke %tmp.50 %tmp.51(%tmp.53);
+        %tmp.55 = and %tmp.48 %tmp.54;
+        push %tmp.55;
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_19_47_end:
+        %tmp.56 = phi [%tmp.49 @_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_19_27_begin] [%tmp.55 @_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_19_47_true] [%tmp.56 @_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_19_47_end];
+        bf %tmp.56 @_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_19_23_if_false;
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_19_23_if_true:
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_19_67_start:
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 20 20 ]
+        %tmp.58 = lgetv %week_of_year.4;
+        ret %tmp.58;
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_19_67_stop:
+        goto @_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_19_23_if_end;
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_19_23_if_false:
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_21_23_start:
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 22 20 ]
+        %tmp.59 = 1;
+        ret %tmp.59;
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_21_23_stop:
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_19_23_if_end:
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_17_16_if_end:
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_16_36_stop:
+        goto @_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_16_12_if_end;
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_16_12_if_false:
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 25 17 ]
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_25_17_if_stmt:
+        %tmp.61 = lgetv %week_of_year.4;
+        %tmp.62 = 0;
+        %tmp.63 = eq %tmp.61 %tmp.62;
+        bf %tmp.63 @_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_25_17_if_false;
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_25_17_if_true:
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_25_40_start:
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 26 16 ]
+        %tmp.64 = self;
+        %tmp.65 = getv function %tmp.64 :julian_day;
+        %tmp.67 = lgetv %year;
+        %tmp.68 = 1;
+        %tmp.69 = sub %tmp.67 %tmp.68;
+        %tmp.70 = 1;
+        %tmp.71 = 1;
+        %tmp.72 = invoke %tmp.64 %tmp.65(%tmp.69, %tmp.70, %tmp.71);
+        lputv %first_day_of_year.1 %tmp.72;
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 27 16 ]
+        %tmp.74 = lgetv %first_day_of_year.1;
+        %tmp.75 = 3;
+        %tmp.76 = add %tmp.74 %tmp.75;
+        %tmp.77 = 7;
+        %tmp.78 = mod %tmp.76 %tmp.77;
+        lputv %day_of_week.3 %tmp.78;
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 28 16 ]
+        %tmp.80 = lgetv %given_day_of_year.2;
+        %tmp.82 = lgetv %first_day_of_year.1;
+        %tmp.83 = sub %tmp.80 %tmp.82;
+        %tmp.85 = lgetv %day_of_week.3;
+        %tmp.86 = add %tmp.83 %tmp.85;
+        %tmp.87 = 4;
+        %tmp.88 = add %tmp.86 %tmp.87;
+        %tmp.89 = 7;
+        %tmp.90 = div %tmp.88 %tmp.89;
+        ret %tmp.90;
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_25_40_stop:
+        goto @_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_25_17_if_end;
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_25_17_if_false:
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_30_17_start:
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 31 16 ]
+        %tmp.92 = lgetv %week_of_year.4;
+        ret %tmp.92;
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_30_17_stop:
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_25_17_if_end:
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_16_12_if_end:
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_11_47_stop:
+    }
+    [ @file = "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc"; @line = 36; ]
+    private
+    function julian_day(year, month, day) {
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_36_54_start:
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 37 12 ]
+        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_36_54_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_36_54_stop" ]
+        %a.1 = local;
+        %tmp.1 = 14;
+        %tmp.3 = lgetv %month;
+        %tmp.4 = sub %tmp.1 %tmp.3;
+        %tmp.5 = 12;
+        %tmp.6 = div %tmp.4 %tmp.5;
+        lputv %a.1 %tmp.6;
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 38 12 ]
+        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_36_54_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_36_54_stop" ]
+        %y.2 = local;
+        %tmp.8 = lgetv %year;
+        %tmp.9 = 4800;
+        %tmp.10 = add %tmp.8 %tmp.9;
+        %tmp.12 = lgetv %a.1;
+        %tmp.13 = sub %tmp.10 %tmp.12;
+        lputv %y.2 %tmp.13;
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 39 12 ]
+        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_36_54_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_36_54_stop" ]
+        %m.3 = local;
+        %tmp.15 = lgetv %month;
+        %tmp.16 = 12;
+        %tmp.18 = lgetv %a.1;
+        %tmp.19 = mul %tmp.16 %tmp.18;
+        %tmp.20 = add %tmp.15 %tmp.19;
+        %tmp.21 = 3;
+        %tmp.22 = sub %tmp.20 %tmp.21;
+        lputv %m.3 %tmp.22;
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 40 12 ]
+        %tmp.24 = lgetv %day;
+        %tmp.25 = 153;
+        %tmp.27 = lgetv %m.3;
+        %tmp.28 = mul %tmp.25 %tmp.27;
+        %tmp.29 = 2;
+        %tmp.30 = add %tmp.28 %tmp.29;
+        %tmp.31 = 5;
+        %tmp.32 = div %tmp.30 %tmp.31;
+        %tmp.33 = add %tmp.24 %tmp.32;
+        %tmp.34 = 365;
+        %tmp.36 = lgetv %y.2;
+        %tmp.37 = mul %tmp.34 %tmp.36;
+        %tmp.38 = add %tmp.33 %tmp.37;
+        %tmp.40 = lgetv %y.2;
+        %tmp.41 = 4;
+        %tmp.42 = div %tmp.40 %tmp.41;
+        %tmp.43 = add %tmp.38 %tmp.42;
+        %tmp.45 = lgetv %y.2;
+        %tmp.46 = 100;
+        %tmp.47 = div %tmp.45 %tmp.46;
+        %tmp.48 = sub %tmp.43 %tmp.47;
+        %tmp.50 = lgetv %y.2;
+        %tmp.51 = 400;
+        %tmp.52 = div %tmp.50 %tmp.51;
+        %tmp.53 = add %tmp.48 %tmp.52;
+        %tmp.54 = 32045;
+        %tmp.55 = sub %tmp.53 %tmp.54;
+        ret %tmp.55;
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_36_54_stop:
+    }
+    [ @file = "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc"; @line = 44; ]
+    function is_leap_year(year) {
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_44_36_start:
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 45 12 ]
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_45_12_if_stmt:
+        %tmp.2 = lgetv %year;
+        %tmp.3 = 4;
+        %tmp.4 = mod %tmp.2 %tmp.3;
+        %tmp.5 = 0;
+        %tmp.6 = ne %tmp.4 %tmp.5;
+        bf %tmp.6 @_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_45_12_if_false;
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_45_12_if_true:
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_45_31_start:
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 46 16 ]
+        %tmp.7 = false;
+        ret %tmp.7;
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_45_31_stop:
+        goto @_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_45_12_if_end;
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_45_12_if_false:
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 47 19 ]
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_47_19_if_stmt:
+        %tmp.9 = lgetv %year;
+        %tmp.10 = 100;
+        %tmp.11 = mod %tmp.9 %tmp.10;
+        %tmp.12 = 0;
+        %tmp.13 = ne %tmp.11 %tmp.12;
+        bf %tmp.13 @_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_47_19_if_false;
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_47_19_if_true:
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_47_40_start:
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 48 16 ]
+        %tmp.14 = true;
+        ret %tmp.14;
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_47_40_stop:
+        goto @_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_47_19_if_end;
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_47_19_if_false:
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 49 18 ]
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_49_18_if_stmt:
+        %tmp.16 = lgetv %year;
+        %tmp.17 = 400;
+        %tmp.18 = mod %tmp.16 %tmp.17;
+        %tmp.19 = 0;
+        %tmp.20 = eq %tmp.18 %tmp.19;
+        bf %tmp.20 @_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_49_18_if_end;
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_49_18_if_true:
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_49_39_start:
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 50 12 ]
+        %tmp.21 = true;
+        ret %tmp.21;
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_49_39_stop:
+        goto @_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_49_18_if_end;
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_49_18_if_end:
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_47_19_if_end:
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_45_12_if_end:
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 52 12 ]
+        %tmp.22 = false;
+        ret %tmp.22;
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_44_36_stop:
+    }
+    [ @file = "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc"; @line = 57; ]
     function initialize() as Void {
-_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_11_26_start:
-[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 12 8 ]
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_57_26_start:
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 58 8 ]
         %tmp.2 = getv ? :WatchFace;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_11_26_stop:
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_57_26_stop:
     }
-    [ @file = "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc"; @line = 16; ]
+    [ @file = "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc"; @line = 62; ]
     function onLayout(dc as Dc) as Void {
-_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_16_40_start:
-[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 17 8 ]
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_62_40_start:
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 63 8 ]
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :setLayout;
         %tmp.4 = getv ? :Rez;
@@ -42,23 +317,23 @@ _home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_16_40_start:
         %tmp.8 = lgetv %dc;
         %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
         invoke %tmp.1 %tmp.2(%tmp.9);
-_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_16_40_stop:
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_62_40_stop:
     }
-    [ @file = "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc"; @line = 23; ]
+    [ @file = "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc"; @line = 69; ]
     function onShow() as Void {
     }
-    [ @file = "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc"; @line = 27; ]
+    [ @file = "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc"; @line = 73; ]
     function onUpdate(dc as Dc) as Void {
-_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_start:
-[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 29 8 ]
-        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_stop" ]
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_start:
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 75 8 ]
+        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_stop" ]
         %clockTime.1 = local;
         %tmp.1 = getm $.Toybox.System;
         %tmp.2 = getv function %tmp.1 :getClockTime;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %clockTime.1 %tmp.3;
-[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 30 8 ]
-        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_stop" ]
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 76 8 ]
+        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_stop" ]
         %timeString.2 = local;
         %tmp.4 = getm $.Toybox.Lang;
         %tmp.5 = getv function %tmp.4 :format;
@@ -80,8 +355,8 @@ _home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_start:
         %tmp.21 = aputv %tmp.20 1 %tmp.19;
         %tmp.22 = invoke %tmp.4 %tmp.5(%tmp.6, %tmp.21);
         lputv %timeString.2 %tmp.22;
-[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 31 8 ]
-        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_stop" ]
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 77 8 ]
+        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_stop" ]
         %view.3 = local;
         %tmp.24 = getv ? :View;
         %tmp.25 = getv function %tmp.24 :findDrawableById;
@@ -89,13 +364,13 @@ _home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_start:
         %tmp.27 = invoke %tmp.24 %tmp.25(%tmp.26);
         %tmp.28 = as %tmp.27 Text;
         lputv %view.3 %tmp.28;
-[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 32 8 ]
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 78 8 ]
         %tmp.29 = lgetv %view.3;
         %tmp.30 = getv function %tmp.29 :setText;
         %tmp.32 = lgetv %timeString.2;
         invoke %tmp.29 %tmp.30(%tmp.32);
-[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 34 8 ]
-        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_stop" ]
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 80 8 ]
+        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_stop" ]
         %view_battery.4 = local;
         %tmp.34 = getv ? :View;
         %tmp.35 = getv function %tmp.34 :findDrawableById;
@@ -103,15 +378,15 @@ _home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_start:
         %tmp.37 = invoke %tmp.34 %tmp.35(%tmp.36);
         %tmp.38 = as %tmp.37 Text;
         lputv %view_battery.4 %tmp.38;
-[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 35 8 ]
-        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_stop" ]
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 81 8 ]
+        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_stop" ]
         %stats.5 = local;
         %tmp.39 = getm $.Toybox.System;
         %tmp.40 = getv function %tmp.39 :getSystemStats;
         %tmp.41 = invoke %tmp.39 %tmp.40();
         lputv %stats.5 %tmp.41;
-[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 37 8 ]
-        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_stop" ]
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 82 8 ]
+        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_stop" ]
         %battery_string.6 = local;
         %tmp.42 = lgetv %stats.5;
         %tmp.43 = getv %tmp.42 :battery;
@@ -119,174 +394,200 @@ _home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_start:
         %tmp.45 = "%02d";
         %tmp.46 = invoke %tmp.43 %tmp.44(%tmp.45);
         lputv %battery_string.6 %tmp.46;
-[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 38 8 ]
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 83 8 ]
         %tmp.47 = lgetv %view_battery.4;
         %tmp.48 = getv function %tmp.47 :setText;
         %tmp.50 = lgetv %battery_string.6;
         %tmp.51 = "%";
         %tmp.52 = add %tmp.50 %tmp.51;
         invoke %tmp.47 %tmp.48(%tmp.52);
-[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 40 8 ]
-        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_stop" ]
-        %date.7 = local;
-        %tmp.53 = getm $.Toybox.Time.Gregorian;
-        %tmp.54 = getv function %tmp.53 :info;
-        %tmp.56 = getv ? :Time;
-        %tmp.57 = getv function %tmp.56 :now;
-        %tmp.58 = invoke %tmp.56 %tmp.57();
-        %tmp.60 = getv ? :Time;
-        %tmp.61 = getv %tmp.60 :FORMAT_SHORT;
-        %tmp.62 = invoke %tmp.53 %tmp.54(%tmp.58, %tmp.61);
-        lputv %date.7 %tmp.62;
-[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 42 8 ]
-        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_stop" ]
-        %dateString.8 = local;
-        %tmp.63 = lgetv %date.7;
-        %tmp.64 = getv %tmp.63 :year;
-        %tmp.65 = getv function %tmp.64 :format;
-        %tmp.66 = "%4d";
-        %tmp.67 = invoke %tmp.64 %tmp.65(%tmp.66);
-        %tmp.68 = "-";
-        %tmp.69 = add %tmp.67 %tmp.68;
-        %tmp.70 = lgetv %date.7;
-        %tmp.71 = getv %tmp.70 :month;
-        %tmp.72 = getv function %tmp.71 :format;
-        %tmp.73 = "%02d";
-        %tmp.74 = invoke %tmp.71 %tmp.72(%tmp.73);
-        %tmp.75 = add %tmp.69 %tmp.74;
-        %tmp.76 = "-";
-        %tmp.77 = add %tmp.75 %tmp.76;
-        %tmp.78 = lgetv %date.7;
-        %tmp.79 = getv %tmp.78 :day;
-        %tmp.80 = getv function %tmp.79 :format;
-        %tmp.81 = "%02d";
-        %tmp.82 = invoke %tmp.79 %tmp.80(%tmp.81);
-        %tmp.83 = add %tmp.77 %tmp.82;
-        lputv %dateString.8 %tmp.83;
-[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 43 8 ]
-        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_stop" ]
-        %view_date.9 = local;
-        %tmp.85 = getv ? :View;
-        %tmp.86 = getv function %tmp.85 :findDrawableById;
-        %tmp.87 = "Date";
-        %tmp.88 = invoke %tmp.85 %tmp.86(%tmp.87);
-        %tmp.89 = as %tmp.88 Text;
-        lputv %view_date.9 %tmp.89;
-[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 44 8 ]
-        %tmp.90 = lgetv %view_date.9;
-        %tmp.91 = getv function %tmp.90 :setText;
-        %tmp.93 = lgetv %dateString.8;
-        invoke %tmp.90 %tmp.91(%tmp.93);
-[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 46 8 ]
-        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_stop" ]
-        %day.10 = local;
-        %tmp.94 = newa 7;
-        %tmp.95 = "Sunday";
-        %tmp.96 = dup %tmp.94;
-        %tmp.97 = aputv %tmp.96 0 %tmp.95;
-        %tmp.98 = "Monday";
-        %tmp.99 = dup %tmp.97;
-        %tmp.100 = aputv %tmp.99 1 %tmp.98;
-        %tmp.101 = "Tuesday";
-        %tmp.102 = dup %tmp.100;
-        %tmp.103 = aputv %tmp.102 2 %tmp.101;
-        %tmp.104 = "Wednesday";
-        %tmp.105 = dup %tmp.103;
-        %tmp.106 = aputv %tmp.105 3 %tmp.104;
-        %tmp.107 = "Thursday";
-        %tmp.108 = dup %tmp.106;
-        %tmp.109 = aputv %tmp.108 4 %tmp.107;
-        %tmp.110 = "Friday";
-        %tmp.111 = dup %tmp.109;
-        %tmp.112 = aputv %tmp.111 5 %tmp.110;
-        %tmp.113 = "Saturday";
-        %tmp.114 = dup %tmp.112;
-        %tmp.115 = aputv %tmp.114 6 %tmp.113;
-        %tmp.116 = lgetv %date.7;
-        %tmp.117 = getv %tmp.116 :day_of_week;
-        %tmp.118 = 1;
-        %tmp.119 = sub %tmp.117 %tmp.118;
-        %tmp.120 = agetv %tmp.115 %tmp.119;
-        lputv %day.10 %tmp.120;
-[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 47 8 ]
-        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_stop" ]
-        %view_day_of_week.11 = local;
-        %tmp.122 = getv ? :View;
-        %tmp.123 = getv function %tmp.122 :findDrawableById;
-        %tmp.124 = "DayOfWeek";
-        %tmp.125 = invoke %tmp.122 %tmp.123(%tmp.124);
-        %tmp.126 = as %tmp.125 Text;
-        lputv %view_day_of_week.11 %tmp.126;
-[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 48 8 ]
-        %tmp.127 = lgetv %view_day_of_week.11;
-        %tmp.128 = getv function %tmp.127 :setText;
-        %tmp.130 = lgetv %day.10;
-        invoke %tmp.127 %tmp.128(%tmp.130);
-[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 50 8 ]
-        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_stop" ]
-        %activity_stats.12 = local;
-        %tmp.131 = getm $.Toybox.ActivityMonitor;
-        %tmp.132 = getv function %tmp.131 :getInfo;
-        %tmp.133 = invoke %tmp.131 %tmp.132();
-        lputv %activity_stats.12 %tmp.133;
-[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 51 8 ]
-        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_stop" ]
-        %recoveryString.13 = local;
-        %tmp.134 = lgetv %activity_stats.12;
-        %tmp.135 = getv %tmp.134 :timeToRecovery;
-        lputv %recoveryString.13 %tmp.135;
-[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 52 8 ]
-        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_stop" ]
-        %floorsString.14 = local;
-        %tmp.136 = lgetv %activity_stats.12;
-        %tmp.137 = getv %tmp.136 :floorsClimbed;
-        lputv %floorsString.14 %tmp.137;
-[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 53 8 ]
-        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_stop" ]
-        %stepsString.15 = local;
-        %tmp.138 = lgetv %activity_stats.12;
-        %tmp.139 = getv %tmp.138 :steps;
-        %tmp.140 = 1000;
-        %tmp.141 = div %tmp.139 %tmp.140;
-        lputv %stepsString.15 %tmp.141;
-[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 54 8 ]
-        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_stop" ]
-        %view_recovery.16 = local;
-        %tmp.143 = getv ? :View;
-        %tmp.144 = getv function %tmp.143 :findDrawableById;
-        %tmp.145 = "Recovery";
-        %tmp.146 = invoke %tmp.143 %tmp.144(%tmp.145);
-        %tmp.147 = as %tmp.146 Text;
-        lputv %view_recovery.16 %tmp.147;
-[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 55 8 ]
-        %tmp.148 = lgetv %view_recovery.16;
-        %tmp.149 = getv function %tmp.148 :setText;
-        %tmp.151 = lgetv %recoveryString.13;
-        %tmp.152 = "H ";
-        %tmp.153 = add %tmp.151 %tmp.152;
-        %tmp.155 = lgetv %floorsString.14;
-        %tmp.156 = add %tmp.153 %tmp.155;
-        %tmp.157 = "F ";
-        %tmp.158 = add %tmp.156 %tmp.157;
-        %tmp.160 = lgetv %stepsString.15;
-        %tmp.161 = add %tmp.158 %tmp.160;
-        %tmp.162 = "S";
-        %tmp.163 = add %tmp.161 %tmp.162;
-        invoke %tmp.148 %tmp.149(%tmp.163);
-[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 57 8 ]
-        %tmp.165 = getv ? :View;
-        %tmp.166 = getv function %tmp.165 :onUpdate;
-        %tmp.168 = lgetv %dc;
-        invoke %tmp.165 %tmp.166(%tmp.168);
-_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_27_40_stop:
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 87 8 ]
+        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_stop" ]
+        %now.7 = local;
+        %tmp.54 = getv ? :Time;
+        %tmp.55 = getv function %tmp.54 :now;
+        %tmp.56 = invoke %tmp.54 %tmp.55();
+        lputv %now.7 %tmp.56;
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 89 8 ]
+        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_stop" ]
+        %date.8 = local;
+        %tmp.57 = getm $.Toybox.Time.Gregorian;
+        %tmp.58 = getv function %tmp.57 :info;
+        %tmp.60 = lgetv %now.7;
+        %tmp.62 = getv ? :Time;
+        %tmp.63 = getv %tmp.62 :FORMAT_SHORT;
+        %tmp.64 = invoke %tmp.57 %tmp.58(%tmp.60, %tmp.63);
+        lputv %date.8 %tmp.64;
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 90 8 ]
+        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_stop" ]
+        %week_num.9 = local;
+        %tmp.65 = self;
+        %tmp.66 = getv function %tmp.65 :iso_week_number;
+        %tmp.67 = lgetv %date.8;
+        %tmp.68 = getv %tmp.67 :year;
+        %tmp.69 = lgetv %date.8;
+        %tmp.70 = getv %tmp.69 :month;
+        %tmp.71 = lgetv %date.8;
+        %tmp.72 = getv %tmp.71 :day;
+        %tmp.73 = invoke %tmp.65 %tmp.66(%tmp.68, %tmp.70, %tmp.72);
+        lputv %week_num.9 %tmp.73;
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 92 8 ]
+        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_stop" ]
+        %dateString.10 = local;
+        %tmp.74 = lgetv %date.8;
+        %tmp.75 = getv %tmp.74 :year;
+        %tmp.76 = getv function %tmp.75 :format;
+        %tmp.77 = "%4d";
+        %tmp.78 = invoke %tmp.75 %tmp.76(%tmp.77);
+        %tmp.79 = getv function %tmp.78 :substring;
+        %tmp.80 = 2;
+        %tmp.81 = 4;
+        %tmp.82 = invoke %tmp.78 %tmp.79(%tmp.80, %tmp.81);
+        %tmp.83 = "-";
+        %tmp.84 = add %tmp.82 %tmp.83;
+        %tmp.85 = lgetv %date.8;
+        %tmp.86 = getv %tmp.85 :month;
+        %tmp.87 = getv function %tmp.86 :format;
+        %tmp.88 = "%02d";
+        %tmp.89 = invoke %tmp.86 %tmp.87(%tmp.88);
+        %tmp.90 = add %tmp.84 %tmp.89;
+        %tmp.91 = "-";
+        %tmp.92 = add %tmp.90 %tmp.91;
+        %tmp.93 = lgetv %date.8;
+        %tmp.94 = getv %tmp.93 :day;
+        %tmp.95 = getv function %tmp.94 :format;
+        %tmp.96 = "%02d";
+        %tmp.97 = invoke %tmp.94 %tmp.95(%tmp.96);
+        %tmp.98 = add %tmp.92 %tmp.97;
+        %tmp.99 = " W";
+        %tmp.100 = add %tmp.98 %tmp.99;
+        %tmp.102 = lgetv %week_num.9;
+        %tmp.103 = add %tmp.100 %tmp.102;
+        lputv %dateString.10 %tmp.103;
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 93 8 ]
+        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_stop" ]
+        %view_date.11 = local;
+        %tmp.105 = getv ? :View;
+        %tmp.106 = getv function %tmp.105 :findDrawableById;
+        %tmp.107 = "Date";
+        %tmp.108 = invoke %tmp.105 %tmp.106(%tmp.107);
+        %tmp.109 = as %tmp.108 Text;
+        lputv %view_date.11 %tmp.109;
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 94 8 ]
+        %tmp.110 = lgetv %view_date.11;
+        %tmp.111 = getv function %tmp.110 :setText;
+        %tmp.113 = lgetv %dateString.10;
+        invoke %tmp.110 %tmp.111(%tmp.113);
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 96 8 ]
+        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_stop" ]
+        %day.12 = local;
+        %tmp.114 = newa 7;
+        %tmp.115 = "Sunday";
+        %tmp.116 = dup %tmp.114;
+        %tmp.117 = aputv %tmp.116 0 %tmp.115;
+        %tmp.118 = "Monday";
+        %tmp.119 = dup %tmp.117;
+        %tmp.120 = aputv %tmp.119 1 %tmp.118;
+        %tmp.121 = "Tuesday";
+        %tmp.122 = dup %tmp.120;
+        %tmp.123 = aputv %tmp.122 2 %tmp.121;
+        %tmp.124 = "Wednesday";
+        %tmp.125 = dup %tmp.123;
+        %tmp.126 = aputv %tmp.125 3 %tmp.124;
+        %tmp.127 = "Thursday";
+        %tmp.128 = dup %tmp.126;
+        %tmp.129 = aputv %tmp.128 4 %tmp.127;
+        %tmp.130 = "Friday";
+        %tmp.131 = dup %tmp.129;
+        %tmp.132 = aputv %tmp.131 5 %tmp.130;
+        %tmp.133 = "Saturday";
+        %tmp.134 = dup %tmp.132;
+        %tmp.135 = aputv %tmp.134 6 %tmp.133;
+        %tmp.136 = lgetv %date.8;
+        %tmp.137 = getv %tmp.136 :day_of_week;
+        %tmp.138 = 1;
+        %tmp.139 = sub %tmp.137 %tmp.138;
+        %tmp.140 = agetv %tmp.135 %tmp.139;
+        lputv %day.12 %tmp.140;
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 97 8 ]
+        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_stop" ]
+        %view_day_of_week.13 = local;
+        %tmp.142 = getv ? :View;
+        %tmp.143 = getv function %tmp.142 :findDrawableById;
+        %tmp.144 = "DayOfWeek";
+        %tmp.145 = invoke %tmp.142 %tmp.143(%tmp.144);
+        %tmp.146 = as %tmp.145 Text;
+        lputv %view_day_of_week.13 %tmp.146;
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 98 8 ]
+        %tmp.147 = lgetv %view_day_of_week.13;
+        %tmp.148 = getv function %tmp.147 :setText;
+        %tmp.150 = lgetv %day.12;
+        invoke %tmp.147 %tmp.148(%tmp.150);
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 100 8 ]
+        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_stop" ]
+        %activity_stats.14 = local;
+        %tmp.151 = getm $.Toybox.ActivityMonitor;
+        %tmp.152 = getv function %tmp.151 :getInfo;
+        %tmp.153 = invoke %tmp.151 %tmp.152();
+        lputv %activity_stats.14 %tmp.153;
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 101 8 ]
+        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_stop" ]
+        %recoveryString.15 = local;
+        %tmp.154 = lgetv %activity_stats.14;
+        %tmp.155 = getv %tmp.154 :timeToRecovery;
+        lputv %recoveryString.15 %tmp.155;
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 102 8 ]
+        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_stop" ]
+        %floorsString.16 = local;
+        %tmp.156 = lgetv %activity_stats.14;
+        %tmp.157 = getv %tmp.156 :floorsClimbed;
+        lputv %floorsString.16 %tmp.157;
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 103 8 ]
+        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_stop" ]
+        %stepsString.17 = local;
+        %tmp.158 = lgetv %activity_stats.14;
+        %tmp.159 = getv %tmp.158 :steps;
+        %tmp.160 = 1000;
+        %tmp.161 = div %tmp.159 %tmp.160;
+        lputv %stepsString.17 %tmp.161;
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 104 8 ]
+        [ "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_start" "_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_stop" ]
+        %view_recovery.18 = local;
+        %tmp.163 = getv ? :View;
+        %tmp.164 = getv function %tmp.163 :findDrawableById;
+        %tmp.165 = "Recovery";
+        %tmp.166 = invoke %tmp.163 %tmp.164(%tmp.165);
+        %tmp.167 = as %tmp.166 Text;
+        lputv %view_recovery.18 %tmp.167;
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 105 8 ]
+        %tmp.168 = lgetv %view_recovery.18;
+        %tmp.169 = getv function %tmp.168 :setText;
+        %tmp.171 = lgetv %recoveryString.15;
+        %tmp.172 = "H ";
+        %tmp.173 = add %tmp.171 %tmp.172;
+        %tmp.175 = lgetv %floorsString.16;
+        %tmp.176 = add %tmp.173 %tmp.175;
+        %tmp.177 = "F ";
+        %tmp.178 = add %tmp.176 %tmp.177;
+        %tmp.180 = lgetv %stepsString.17;
+        %tmp.181 = add %tmp.178 %tmp.180;
+        %tmp.182 = "kS";
+        %tmp.183 = add %tmp.181 %tmp.182;
+        invoke %tmp.168 %tmp.169(%tmp.183);
+[ "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc" 107 8 ]
+        %tmp.185 = getv ? :View;
+        %tmp.186 = getv function %tmp.185 :onUpdate;
+        %tmp.188 = lgetv %dc;
+        invoke %tmp.185 %tmp.186(%tmp.188);
+_home_kryt_dev_garmin_clearFace_source_clearFaceView_mc_73_40_stop:
     }
-    [ @file = "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc"; @line = 63; ]
+    [ @file = "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc"; @line = 113; ]
     function onHide() as Void {
     }
-    [ @file = "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc"; @line = 67; ]
+    [ @file = "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc"; @line = 117; ]
     function onExitSleep() as Void {
     }
-    [ @file = "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc"; @line = 71; ]
+    [ @file = "/home/kryt/dev/garmin/clearFace/source/clearFaceView.mc"; @line = 121; ]
     function onEnterSleep() as Void {
     }
 }
