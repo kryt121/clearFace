@@ -170,12 +170,12 @@ _home_kryt_dev_garmin_clearFace_bin_gen_006_B3291_00_source_Rez_mcgen_19_73_star
             lputv %rez_cmp_local_text_TimeLabel.3 %tmp.89;
 [ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 26 12 ]
             [ "_home_kryt_dev_garmin_clearFace_bin_gen_006_B3291_00_source_Rez_mcgen_19_73_start" "_home_kryt_dev_garmin_clearFace_bin_gen_006_B3291_00_source_Rez_mcgen_19_73_stop" ]
-            %rez_cmp_local_text_Recovery.4 = local;
+            %rez_cmp_local_text_Sun.4 = local;
             %tmp.139 = getm $.Toybox.WatchUi;
             %tmp.140 = getv function ? %tmp.139 :Text;
             %tmp.141 = newd 5;
             %tmp.143 = const :identifier;
-            %tmp.144 = "Recovery";
+            %tmp.144 = "Sun";
             %tmp.145 = dup %tmp.141;
             %tmp.146 = aputv %tmp.145 %tmp.143 %tmp.144;
             %tmp.148 = const :locX;
@@ -186,7 +186,7 @@ _home_kryt_dev_garmin_clearFace_bin_gen_006_B3291_00_source_Rez_mcgen_19_73_star
             %tmp.153 = aputv %tmp.152 %tmp.148 %tmp.151;
             %tmp.155 = const :locY;
             %tmp.156 = 280;
-            %tmp.157 = 65;
+            %tmp.157 = 60;
             %tmp.158 = 100.0;
             %tmp.159 = div %tmp.157 %tmp.158;
             %tmp.160 = mul %tmp.156 %tmp.159;
@@ -203,15 +203,15 @@ _home_kryt_dev_garmin_clearFace_bin_gen_006_B3291_00_source_Rez_mcgen_19_73_star
             %tmp.173 = dup %tmp.168;
             %tmp.174 = aputv %tmp.173 %tmp.170 %tmp.172;
             %tmp.137 = newc %tmp.140 (%tmp.174);
-            lputv %rez_cmp_local_text_Recovery.4 %tmp.137;
+            lputv %rez_cmp_local_text_Sun.4 %tmp.137;
 [ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 28 12 ]
             [ "_home_kryt_dev_garmin_clearFace_bin_gen_006_B3291_00_source_Rez_mcgen_19_73_start" "_home_kryt_dev_garmin_clearFace_bin_gen_006_B3291_00_source_Rez_mcgen_19_73_stop" ]
-            %rez_cmp_local_text_Battery.5 = local;
+            %rez_cmp_local_text_Recovery.5 = local;
             %tmp.177 = getm $.Toybox.WatchUi;
             %tmp.178 = getv function ? %tmp.177 :Text;
             %tmp.179 = newd 5;
             %tmp.181 = const :identifier;
-            %tmp.182 = "Battery";
+            %tmp.182 = "Recovery";
             %tmp.183 = dup %tmp.179;
             %tmp.184 = aputv %tmp.183 %tmp.181 %tmp.182;
             %tmp.186 = const :locX;
@@ -222,7 +222,7 @@ _home_kryt_dev_garmin_clearFace_bin_gen_006_B3291_00_source_Rez_mcgen_19_73_star
             %tmp.191 = aputv %tmp.190 %tmp.186 %tmp.189;
             %tmp.193 = const :locY;
             %tmp.194 = 280;
-            %tmp.195 = 80;
+            %tmp.195 = 72;
             %tmp.196 = 100.0;
             %tmp.197 = div %tmp.195 %tmp.196;
             %tmp.198 = mul %tmp.194 %tmp.197;
@@ -239,1118 +239,1157 @@ _home_kryt_dev_garmin_clearFace_bin_gen_006_B3291_00_source_Rez_mcgen_19_73_star
             %tmp.211 = dup %tmp.206;
             %tmp.212 = aputv %tmp.211 %tmp.208 %tmp.210;
             %tmp.175 = newc %tmp.178 (%tmp.212);
-            lputv %rez_cmp_local_text_Battery.5 %tmp.175;
+            lputv %rez_cmp_local_text_Recovery.5 %tmp.175;
 [ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 30 12 ]
-            %tmp.213 = newa Array<WatchUi.Drawable> 5;
-            %tmp.215 = lgetv %rez_cmp_local_text_DayOfWeek.1;
-            %tmp.216 = dup %tmp.213;
-            %tmp.217 = aputv %tmp.216 0 %tmp.215;
-            %tmp.219 = lgetv %rez_cmp_local_text_Date.2;
-            %tmp.220 = dup %tmp.217;
-            %tmp.221 = aputv %tmp.220 1 %tmp.219;
-            %tmp.223 = lgetv %rez_cmp_local_text_TimeLabel.3;
-            %tmp.224 = dup %tmp.221;
-            %tmp.225 = aputv %tmp.224 2 %tmp.223;
-            %tmp.227 = lgetv %rez_cmp_local_text_Recovery.4;
-            %tmp.228 = dup %tmp.225;
-            %tmp.229 = aputv %tmp.228 3 %tmp.227;
-            %tmp.231 = lgetv %rez_cmp_local_text_Battery.5;
-            %tmp.232 = dup %tmp.229;
-            %tmp.233 = aputv %tmp.232 4 %tmp.231;
-            ret %tmp.233;
+            [ "_home_kryt_dev_garmin_clearFace_bin_gen_006_B3291_00_source_Rez_mcgen_19_73_start" "_home_kryt_dev_garmin_clearFace_bin_gen_006_B3291_00_source_Rez_mcgen_19_73_stop" ]
+            %rez_cmp_local_text_Battery.6 = local;
+            %tmp.215 = getm $.Toybox.WatchUi;
+            %tmp.216 = getv function ? %tmp.215 :Text;
+            %tmp.217 = newd 5;
+            %tmp.219 = const :identifier;
+            %tmp.220 = "Battery";
+            %tmp.221 = dup %tmp.217;
+            %tmp.222 = aputv %tmp.221 %tmp.219 %tmp.220;
+            %tmp.224 = const :locX;
+            %tmp.225 = 280;
+            %tmp.226 = 0.5;
+            %tmp.227 = mul %tmp.225 %tmp.226;
+            %tmp.228 = dup %tmp.222;
+            %tmp.229 = aputv %tmp.228 %tmp.224 %tmp.227;
+            %tmp.231 = const :locY;
+            %tmp.232 = 280;
+            %tmp.233 = 85;
+            %tmp.234 = 100.0;
+            %tmp.235 = div %tmp.233 %tmp.234;
+            %tmp.236 = mul %tmp.232 %tmp.235;
+            %tmp.237 = dup %tmp.229;
+            %tmp.238 = aputv %tmp.237 %tmp.231 %tmp.236;
+            %tmp.240 = const :justification;
+            %tmp.241 = getm $.Toybox.Graphics;
+            %tmp.242 = getv %tmp.241 :TEXT_JUSTIFY_CENTER;
+            %tmp.243 = dup %tmp.238;
+            %tmp.244 = aputv %tmp.243 %tmp.240 %tmp.242;
+            %tmp.246 = const :font;
+            %tmp.247 = getm $.Toybox.Graphics;
+            %tmp.248 = getv %tmp.247 :FONT_LARGE;
+            %tmp.249 = dup %tmp.244;
+            %tmp.250 = aputv %tmp.249 %tmp.246 %tmp.248;
+            %tmp.213 = newc %tmp.216 (%tmp.250);
+            lputv %rez_cmp_local_text_Battery.6 %tmp.213;
+[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 32 12 ]
+            %tmp.251 = newa Array<WatchUi.Drawable> 6;
+            %tmp.253 = lgetv %rez_cmp_local_text_DayOfWeek.1;
+            %tmp.254 = dup %tmp.251;
+            %tmp.255 = aputv %tmp.254 0 %tmp.253;
+            %tmp.257 = lgetv %rez_cmp_local_text_Date.2;
+            %tmp.258 = dup %tmp.255;
+            %tmp.259 = aputv %tmp.258 1 %tmp.257;
+            %tmp.261 = lgetv %rez_cmp_local_text_TimeLabel.3;
+            %tmp.262 = dup %tmp.259;
+            %tmp.263 = aputv %tmp.262 2 %tmp.261;
+            %tmp.265 = lgetv %rez_cmp_local_text_Sun.4;
+            %tmp.266 = dup %tmp.263;
+            %tmp.267 = aputv %tmp.266 3 %tmp.265;
+            %tmp.269 = lgetv %rez_cmp_local_text_Recovery.5;
+            %tmp.270 = dup %tmp.267;
+            %tmp.271 = aputv %tmp.270 4 %tmp.269;
+            %tmp.273 = lgetv %rez_cmp_local_text_Battery.6;
+            %tmp.274 = dup %tmp.271;
+            %tmp.275 = aputv %tmp.274 5 %tmp.273;
+            ret %tmp.275;
 _home_kryt_dev_garmin_clearFace_bin_gen_006_B3291_00_source_Rez_mcgen_19_73_stop:
         }
     }
-    [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 34; ]
+    [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 36; ]
     module Menus {
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 34; ]
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 36; ]
         <init> {
         }
     }
-    [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 37; ]
+    [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 39; ]
     module Strings {
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 37; ]
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 39; ]
         <init> {
         }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 38; @position = 27; initialized = true; ]
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 40; @position = 27; initialized = true; ]
         var AppName as Symbol;
     }
-    [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 41; ]
+    [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 43; ]
     module Styles {
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 41; ]
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 43; ]
         <init> {
         }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 42; ]
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 44; ]
         module system_size__menu_header {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 42; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 44; ]
             <init> {
             }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 43; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 45; @position = 18; ]
             const width as Number = 280;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 44; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 46; @position = 18; ]
             const height as Number = 87;
         }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 47; ]
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 49; ]
         module system_icon_dark__hint_button_left_bottom {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 47; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 49; ]
             <init> {
             }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 48; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 50; @position = 18; ]
             const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_dark__hint_button_left_bottom.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 49; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 51; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 52; ]
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 54; ]
         module system_loc__hint_button_left_bottom {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 52; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 54; ]
             <init> {
             }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 53; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 55; @position = 18; ]
             const x as Number = 11;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 54; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 56; @position = 18; ]
             const y as Number = 185;
         }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 57; ]
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 59; ]
         module prompt_loc__body_no_title {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 57; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 59; ]
             <init> {
             }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 58; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 60; @position = 18; ]
             const x as Number = 28;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 59; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 61; @position = 18; ]
             const y as Number = 28;
         }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 62; ]
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 64; ]
         module system_icon_dark__about {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 62; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 64; ]
             <init> {
             }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 63; @position = 18; ]
-            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_dark__about.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 64; @position = 18; ]
-            const compress as String = "true";
             [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 65; @position = 18; ]
-            const dithering as String = "none";
+            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_dark__about.svg";
             [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 66; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 67; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 68; @position = 18; ]
             const automaticPalette as String = "true";
         }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 69; ]
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 71; ]
         module system_loc__hint_button_right_bottom {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 69; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 71; ]
             <init> {
             }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 70; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 72; @position = 18; ]
             const x as Number = 242;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 71; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 73; @position = 18; ]
             const y as Number = 185;
         }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 74; ]
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 76; ]
         module confirmation_color_dark__body {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 74; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 76; ]
             <init> {
-[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 76 18 ]
-                %tmp.234 = getm $.Toybox.Graphics;
-                %tmp.235 = getv %tmp.234 :COLOR_TRANSPARENT;
-                putv self :background %tmp.235;
+[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 78 18 ]
+                %tmp.276 = getm $.Toybox.Graphics;
+                %tmp.277 = getv %tmp.276 :COLOR_TRANSPARENT;
+                putv self :background %tmp.277;
             }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 75; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 77; @position = 18; ]
             const color as Number = 0xFFFFFF;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 76; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 78; @position = 18; ]
             const background;
         }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 79; ]
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 81; ]
         module system_icon_light__question {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 79; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 81; ]
             <init> {
             }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 80; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 82; @position = 18; ]
             const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_light__question.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 81; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 83; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 84; ]
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 86; ]
         module system_loc__hint_button_left_top {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 84; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 86; ]
             <init> {
             }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 85; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 87; @position = 18; ]
             const exclude as Boolean = true;
         }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 88; ]
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 90; ]
         module prompt_font__title {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 88; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 90; ]
             <init> {
-[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 89 18 ]
-                %tmp.236 = getm $.Toybox.Graphics;
-                %tmp.237 = getv %tmp.236 :TEXT_JUSTIFY_CENTER;
-                %tmp.238 = getm $.Toybox.Graphics;
-                %tmp.239 = getv %tmp.238 :TEXT_JUSTIFY_VCENTER;
-                %tmp.240 = bitor %tmp.237 %tmp.239;
-                putv self :justification %tmp.240;
-[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 90 18 ]
-                %tmp.241 = getm $.Toybox.Graphics;
-                %tmp.242 = getv %tmp.241 :FONT_XTINY;
-                putv self :font %tmp.242;
+[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 91 18 ]
+                %tmp.278 = getm $.Toybox.Graphics;
+                %tmp.279 = getv %tmp.278 :TEXT_JUSTIFY_CENTER;
+                %tmp.280 = getm $.Toybox.Graphics;
+                %tmp.281 = getv %tmp.280 :TEXT_JUSTIFY_VCENTER;
+                %tmp.282 = bitor %tmp.279 %tmp.281;
+                putv self :justification %tmp.282;
+[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 92 18 ]
+                %tmp.283 = getm $.Toybox.Graphics;
+                %tmp.284 = getv %tmp.283 :FONT_XTINY;
+                putv self :font %tmp.284;
             }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 89; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 91; @position = 18; ]
             const justification;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 90; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 92; @position = 18; ]
             const font;
         }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 93; ]
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 95; ]
         module system_icon_dark__discard {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 93; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 95; ]
             <init> {
             }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 94; @position = 18; ]
-            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_dark__discard.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 95; @position = 18; ]
-            const compress as String = "true";
             [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 96; @position = 18; ]
-            const dithering as String = "none";
+            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_dark__discard.svg";
             [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 97; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 98; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 99; @position = 18; ]
             const automaticPalette as String = "true";
         }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 100; ]
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 102; ]
         module system_size__menu_item {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 100; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 102; ]
             <init> {
             }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 101; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 103; @position = 18; ]
             const width as Number = 280;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 102; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 104; @position = 18; ]
             const height as Number = 73;
         }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 105; ]
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 107; ]
         module prompt_color_dark__title {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 105; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 107; ]
             <init> {
-[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 107 18 ]
-                %tmp.243 = getm $.Toybox.Graphics;
-                %tmp.244 = getv %tmp.243 :COLOR_TRANSPARENT;
-                putv self :background %tmp.244;
+[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 109 18 ]
+                %tmp.285 = getm $.Toybox.Graphics;
+                %tmp.286 = getv %tmp.285 :COLOR_TRANSPARENT;
+                putv self :background %tmp.286;
             }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 106; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 108; @position = 18; ]
             const color as Number = 0xFFFFFF;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 107; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 109; @position = 18; ]
             const background;
         }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 110; ]
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 112; ]
         module system_icon_destructive__cancel {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 110; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 112; ]
             <init> {
             }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 111; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 113; @position = 18; ]
             const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_destructive__cancel.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 112; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 114; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 115; ]
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 117; ]
         module system_icon_light__hint_button_right_bottom {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 115; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 117; ]
             <init> {
             }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 116; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 118; @position = 18; ]
             const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_light__hint_button_right_bottom.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 117; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 119; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 120; ]
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 122; ]
         module system_color_dark__text {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 120; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 122; ]
             <init> {
-[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 122 18 ]
-                %tmp.245 = getm $.Toybox.Graphics;
-                %tmp.246 = getv %tmp.245 :COLOR_TRANSPARENT;
-                putv self :background %tmp.246;
+[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 124 18 ]
+                %tmp.287 = getm $.Toybox.Graphics;
+                %tmp.288 = getv %tmp.287 :COLOR_TRANSPARENT;
+                putv self :background %tmp.288;
             }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 121; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 123; @position = 18; ]
             const color as Number = 0xFFFFFF;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 122; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 124; @position = 18; ]
             const background;
         }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 125; ]
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 127; ]
         module system_icon_destructive__discard {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 125; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 127; ]
             <init> {
             }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 126; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 128; @position = 18; ]
             const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_destructive__discard.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 127; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 129; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 130; ]
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 132; ]
         module prompt_loc__title {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 130; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 132; ]
             <init> {
             }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 131; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 133; @position = 18; ]
             const x as Number = 28;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 132; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 134; @position = 18; ]
             const y as Number = 21;
         }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 135; ]
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 137; ]
         module system_icon_dark__hint_action_menu {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 135; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 137; ]
             <init> {
             }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 136; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 138; @position = 18; ]
             const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_dark__hint_button_right_top.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 137; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 139; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 140; ]
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 142; ]
         module prompt_color_light__title {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 140; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 142; ]
             <init> {
-[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 142 18 ]
-                %tmp.247 = getm $.Toybox.Graphics;
-                %tmp.248 = getv %tmp.247 :COLOR_TRANSPARENT;
-                putv self :background %tmp.248;
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 141; @position = 18; ]
-            const color as Number = 0x000000;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 142; @position = 18; ]
-            const background;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 145; ]
-        module prompt_size__title {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 145; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 146; @position = 18; ]
-            const width as Number = 224;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 147; @position = 18; ]
-            const height as Number = 42;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 150; ]
-        module system_icon_dark__hint_button_right_top {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 150; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 151; @position = 18; ]
-            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_dark__hint_button_right_top.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 152; @position = 18; ]
-            const dithering as String = "none";
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 155; ]
-        module confirmation_font__body {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 155; ]
-            <init> {
-[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 156 18 ]
-                %tmp.249 = getm $.Toybox.Graphics;
-                %tmp.250 = getv %tmp.249 :TEXT_JUSTIFY_CENTER;
-                %tmp.251 = getm $.Toybox.Graphics;
-                %tmp.252 = getv %tmp.251 :TEXT_JUSTIFY_VCENTER;
-                %tmp.253 = bitor %tmp.250 %tmp.252;
-                putv self :justification %tmp.253;
-[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 157 18 ]
-                %tmp.254 = getm $.Toybox.Graphics;
-                %tmp.255 = getv %tmp.254 :FONT_TINY;
-                putv self :font %tmp.255;
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 156; @position = 18; ]
-            const justification;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 157; @position = 18; ]
-            const font;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 160; ]
-        module system_icon_dark__hint_button_left_middle {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 160; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 161; @position = 18; ]
-            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_dark__hint_button_left_middle.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 162; @position = 18; ]
-            const dithering as String = "none";
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 165; ]
-        module system_color_dark__background {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 165; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 166; @position = 18; ]
-            const color as Number = 0x000000;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 167; @position = 18; ]
-            const background as Number = 0x000000;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 170; ]
-        module system_icon_light__cancel {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 170; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 171; @position = 18; ]
-            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_light__cancel.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 172; @position = 18; ]
-            const dithering as String = "none";
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 175; ]
-        module system_size__launch_icon {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 175; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 176; @position = 18; ]
-            const scaleX as Number = 40;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 177; @position = 18; ]
-            const scaleY as Number = 40;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 178; @position = 18; ]
-            const scaleRelativeTo as String = "screen";
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 181; ]
-        module confirmation_input__confirm {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 181; ]
-            <init> {
-[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 182 18 ]
-                %tmp.256 = getm $.Toybox.WatchUi;
-                %tmp.257 = getv %tmp.256 :KEY_ENTER;
-                putv self :button %tmp.257;
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 182; @position = 18; ]
-            const button;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 185; ]
-        module system_icon_light__about {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 185; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 186; @position = 18; ]
-            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_light__about.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 187; @position = 18; ]
-            const dithering as String = "none";
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 190; ]
-        module system_size__toast_icon {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 190; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 191; @position = 18; ]
-            const scaleX as Number = 40;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 192; @position = 18; ]
-            const scaleY as Number = 40;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 193; @position = 18; ]
-            const scaleRelativeTo as String = "screen";
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 196; ]
-        module confirmation_icon__hint_reject {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 196; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 197; @position = 18; ]
-            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/confirmation_icon__hint_reject.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 198; @position = 18; ]
-            const dithering as String = "none";
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 201; ]
-        module system_icon_light__hint_action_menu {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 201; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 202; @position = 18; ]
-            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_light__hint_button_right_top.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 203; @position = 18; ]
-            const dithering as String = "none";
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 206; ]
-        module prompt_font__body_with_title {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 206; ]
-            <init> {
-[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 207 18 ]
-                %tmp.258 = getm $.Toybox.Graphics;
-                %tmp.259 = getv %tmp.258 :TEXT_JUSTIFY_CENTER;
-                putv self :justification %tmp.259;
-[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 208 18 ]
-                %tmp.260 = getm $.Toybox.Graphics;
-                %tmp.261 = getv %tmp.260 :FONT_TINY;
-                putv self :font %tmp.261;
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 207; @position = 18; ]
-            const justification;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 208; @position = 18; ]
-            const font;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 211; ]
-        module confirmation_loc__body {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 211; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 212; @position = 18; ]
-            const x as Number = 56;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 213; @position = 18; ]
-            const y as Number = 56;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 216; ]
-        module prompt_color_dark__background {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 216; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 217; @position = 18; ]
-            const color as Number = 0x000000;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 218; @position = 18; ]
-            const background as Number = 0x000000;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 221; ]
-        module system_loc__hint_action_menu {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 221; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 222; @position = 18; ]
-            const x as Number = 242;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 223; @position = 18; ]
-            const y as Number = 52;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 226; ]
-        module confirmation_icon__hint_confirm {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 226; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 227; @position = 18; ]
-            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/confirmation_icon__hint_completion.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 228; @position = 18; ]
-            const dithering as String = "none";
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 231; ]
-        module confirmation_loc__hint_reject {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 231; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 232; @position = 18; ]
-            const x as Number = 11;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 233; @position = 18; ]
-            const y as Number = 185;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 234; @position = 18; ]
-            const horizontalJustification as String = "left";
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 237; ]
-        module system_loc__hint_button_left_middle {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 237; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 238; @position = 18; ]
-            const x as Number = 3;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 239; @position = 18; ]
-            const y as Number = 116;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 242; ]
-        module activity_color_dark__background {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 242; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 243; @position = 18; ]
-            const color as Number = 0x000000;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 244; @position = 18; ]
-            const background as Number = 0x000000;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 247; ]
-        module prompt_size__body_no_title {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 247; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 248; @position = 18; ]
-            const width as Number = 224;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 249; @position = 18; ]
-            const height as Number = 224;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 252; ]
-        module system_icon_light__hint_button_left_bottom {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 252; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 253; @position = 18; ]
-            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_light__hint_button_left_bottom.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 254; @position = 18; ]
-            const dithering as String = "none";
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 257; ]
-        module system_size__menu_icon {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 257; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 258; @position = 18; ]
-            const scaleX as Number = 40;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 259; @position = 18; ]
-            const scaleY as Number = 40;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 260; @position = 18; ]
-            const scaleRelativeTo as String = "screen";
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 263; ]
-        module system_icon_destructive__warning {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 263; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 264; @position = 18; ]
-            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_destructive__warning.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 265; @position = 18; ]
-            const dithering as String = "none";
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 268; ]
-        module system_icon_light__hint_button_left_top {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 268; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 269; @position = 18; ]
-            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_light__hint_button_left_top.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 270; @position = 18; ]
-            const dithering as String = "none";
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 273; ]
-        module prompt_color_light__background {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 273; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 274; @position = 18; ]
-            const color as Number = 0xFFFFFF;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 275; @position = 18; ]
-            const background as Number = 0xFFFFFF;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 278; ]
-        module system_loc__hint_button_right_middle {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 278; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 279; @position = 18; ]
-            const exclude as Boolean = true;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 282; ]
-        module system_icon_dark__cancel {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 282; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 283; @position = 18; ]
-            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_dark__cancel.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 284; @position = 18; ]
-            const compress as String = "true";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 285; @position = 18; ]
-            const dithering as String = "none";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 286; @position = 18; ]
-            const automaticPalette as String = "true";
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 289; ]
-        module confirmation_input__delete {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 289; ]
-            <init> {
-[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 290 18 ]
-                %tmp.262 = getm $.Toybox.WatchUi;
-                %tmp.263 = getv %tmp.262 :KEY_ENTER;
-                putv self :button %tmp.263;
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 290; @position = 18; ]
-            const button;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 293; ]
-        module prompt_size__body_with_title {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 293; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 294; @position = 18; ]
-            const width as Number = 224;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 295; @position = 18; ]
-            const height as Number = 168;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 298; ]
-        module system_loc__hint_button_right_top {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 298; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 299; @position = 18; ]
-            const x as Number = 242;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 300; @position = 18; ]
-            const y as Number = 52;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 303; ]
-        module system_icon_dark__hint_button_left_top {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 303; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 304; @position = 18; ]
-            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_dark__hint_button_left_top.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 305; @position = 18; ]
-            const dithering as String = "none";
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 308; ]
-        module system_color_light__text {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 308; ]
-            <init> {
-[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 310 18 ]
-                %tmp.264 = getm $.Toybox.Graphics;
-                %tmp.265 = getv %tmp.264 :COLOR_TRANSPARENT;
-                putv self :background %tmp.265;
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 309; @position = 18; ]
-            const color as Number = 0x000000;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 310; @position = 18; ]
-            const background;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 313; ]
-        module system_input__action_menu {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 313; ]
-            <init> {
-[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 314 18 ]
-                %tmp.266 = getm $.Toybox.WatchUi;
-                %tmp.267 = getv %tmp.266 :KEY_ENTER;
-                putv self :button %tmp.267;
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 314; @position = 18; ]
-            const button;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 317; ]
-        module system_icon_light__save {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 317; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 318; @position = 18; ]
-            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_light__save.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 319; @position = 18; ]
-            const dithering as String = "none";
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 322; ]
-        module system_icon_light__check {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 322; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 323; @position = 18; ]
-            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_light__check.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 324; @position = 18; ]
-            const dithering as String = "none";
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 327; ]
-        module prompt_color_light__body {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 327; ]
-            <init> {
-[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 329 18 ]
-                %tmp.268 = getm $.Toybox.Graphics;
-                %tmp.269 = getv %tmp.268 :COLOR_TRANSPARENT;
-                putv self :background %tmp.269;
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 328; @position = 18; ]
-            const color as Number = 0x000000;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 329; @position = 18; ]
-            const background;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 332; ]
-        module system_loc__subwindow {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 332; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 333; @position = 18; ]
-            const exclude as Boolean = true;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 336; ]
-        module confirmation_input__reject {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 336; ]
-            <init> {
-[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 337 18 ]
-                %tmp.270 = getm $.Toybox.WatchUi;
-                %tmp.271 = getv %tmp.270 :KEY_DOWN;
-                putv self :button %tmp.271;
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 337; @position = 18; ]
-            const button;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 340; ]
-        module system_icon_light__warning {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 340; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 341; @position = 18; ]
-            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_light__warning.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 342; @position = 18; ]
-            const dithering as String = "none";
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 345; ]
-        module system_icon_light__revert {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 345; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 346; @position = 18; ]
-            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_light__revert.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 347; @position = 18; ]
-            const dithering as String = "none";
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 350; ]
-        module system_size__subwindow {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 350; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 351; @position = 18; ]
-            const exclude as Boolean = true;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 354; ]
-        module confirmation_color_light__body {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 354; ]
-            <init> {
-[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 356 18 ]
-                %tmp.272 = getm $.Toybox.Graphics;
-                %tmp.273 = getv %tmp.272 :COLOR_TRANSPARENT;
-                putv self :background %tmp.273;
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 355; @position = 18; ]
-            const color as Number = 0x000000;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 356; @position = 18; ]
-            const background;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 359; ]
-        module activity_color_light__background {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 359; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 360; @position = 18; ]
-            const color as Number = 0xFFFFFF;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 361; @position = 18; ]
-            const background as Number = 0xFFFFFF;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 364; ]
-        module system_icon_dark__check {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 364; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 365; @position = 18; ]
-            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_dark__check.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 366; @position = 18; ]
-            const compress as String = "true";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 367; @position = 18; ]
-            const dithering as String = "none";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 368; @position = 18; ]
-            const automaticPalette as String = "true";
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 371; ]
-        module confirmation_loc__hint_keep {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 371; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 372; @position = 18; ]
-            const x as Number = 11;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 373; @position = 18; ]
-            const y as Number = 185;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 374; @position = 18; ]
-            const horizontalJustification as String = "left";
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 377; ]
-        module confirmation_loc__hint_delete {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 377; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 378; @position = 18; ]
-            const x as Number = 226;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 379; @position = 18; ]
-            const y as Number = 52;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 382; ]
-        module system_size__screen {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 382; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 383; @position = 18; ]
-            const width as Number = 280;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 384; @position = 18; ]
-            const height as Number = 280;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 387; ]
-        module system_color_light__background {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 387; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 388; @position = 18; ]
-            const color as Number = 0xFFFFFF;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 389; @position = 18; ]
-            const background as Number = 0xFFFFFF;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 392; ]
-        module system_icon_light__hint_button_left_middle {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 392; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 393; @position = 18; ]
-            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_light__hint_button_left_middle.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 394; @position = 18; ]
-            const dithering as String = "none";
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 397; ]
-        module confirmation_loc__hint_confirm {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 397; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 398; @position = 18; ]
-            const x as Number = 226;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 399; @position = 18; ]
-            const y as Number = 52;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 402; ]
-        module system_icon_dark__hint_button_right_bottom {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 402; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 403; @position = 18; ]
-            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_dark__hint_button_right_bottom.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 404; @position = 18; ]
-            const dithering as String = "none";
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 407; ]
-        module system_icon_dark__revert {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 407; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 408; @position = 18; ]
-            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_dark__revert.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 409; @position = 18; ]
-            const compress as String = "true";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 410; @position = 18; ]
-            const dithering as String = "none";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 411; @position = 18; ]
-            const automaticPalette as String = "true";
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 414; ]
-        module activity_color_dark__text {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 414; ]
-            <init> {
-[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 416 18 ]
-                %tmp.274 = getm $.Toybox.Graphics;
-                %tmp.275 = getv %tmp.274 :COLOR_TRANSPARENT;
-                putv self :background %tmp.275;
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 415; @position = 18; ]
-            const color as Number = 0xFFFFFF;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 416; @position = 18; ]
-            const background;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 419; ]
-        module confirmation_input__keep {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 419; ]
-            <init> {
-[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 420 18 ]
-                %tmp.276 = getm $.Toybox.WatchUi;
-                %tmp.277 = getv %tmp.276 :KEY_DOWN;
-                putv self :button %tmp.277;
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 420; @position = 18; ]
-            const button;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 423; ]
-        module prompt_loc__body_with_title {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 423; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 424; @position = 18; ]
-            const x as Number = 28;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 425; @position = 18; ]
-            const y as Number = 84;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 428; ]
-        module system_icon_dark__question {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 428; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 429; @position = 18; ]
-            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_dark__question.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 430; @position = 18; ]
-            const compress as String = "true";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 431; @position = 18; ]
-            const dithering as String = "none";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 432; @position = 18; ]
-            const automaticPalette as String = "true";
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 435; ]
-        module system_icon_light__discard {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 435; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 436; @position = 18; ]
-            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_light__discard.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 437; @position = 18; ]
-            const dithering as String = "none";
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 440; ]
-        module device_info {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 440; ]
-            <init> {
-[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 442 18 ]
-                %tmp.278 = getm $.Toybox.System;
-                %tmp.279 = getv %tmp.278 :SCREEN_SHAPE_ROUND;
-                putv self :screenShape %tmp.279;
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 441; @position = 18; ]
-            const screenWidth as Number = 280;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 442; @position = 18; ]
-            const screenShape;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 443; @position = 18; ]
-            const hasNightMode as Boolean = false;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 444; @position = 18; ]
-            const screenHeight as Number = 280;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 445; @position = 18; ]
-            const hasTouchScreen as Boolean = false;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 448; ]
-        module system_icon_dark__search {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 448; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 449; @position = 18; ]
-            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_dark__search.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 450; @position = 18; ]
-            const compress as String = "true";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 451; @position = 18; ]
-            const dithering as String = "none";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 452; @position = 18; ]
-            const automaticPalette as String = "true";
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 455; ]
-        module activity_color_light__text {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 455; ]
-            <init> {
-[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 457 18 ]
-                %tmp.280 = getm $.Toybox.Graphics;
-                %tmp.281 = getv %tmp.280 :COLOR_TRANSPARENT;
-                putv self :background %tmp.281;
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 456; @position = 18; ]
-            const color as Number = 0x000000;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 457; @position = 18; ]
-            const background;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 460; ]
-        module confirmation_icon__hint_keep {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 460; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 461; @position = 18; ]
-            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/confirmation_icon__hint_keep.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 462; @position = 18; ]
-            const dithering as String = "none";
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 465; ]
-        module system_icon_dark__save {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 465; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 466; @position = 18; ]
-            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_dark__save.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 467; @position = 18; ]
-            const compress as String = "true";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 468; @position = 18; ]
-            const dithering as String = "none";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 469; @position = 18; ]
-            const automaticPalette as String = "true";
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 472; ]
-        module prompt_font__body_no_title {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 472; ]
-            <init> {
-[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 473 18 ]
-                %tmp.282 = getm $.Toybox.Graphics;
-                %tmp.283 = getv %tmp.282 :TEXT_JUSTIFY_CENTER;
-                %tmp.284 = getm $.Toybox.Graphics;
-                %tmp.285 = getv %tmp.284 :TEXT_JUSTIFY_VCENTER;
-                %tmp.286 = bitor %tmp.283 %tmp.285;
-                putv self :justification %tmp.286;
-[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 474 18 ]
-                %tmp.287 = getm $.Toybox.Graphics;
-                %tmp.288 = getv %tmp.287 :FONT_TINY;
-                putv self :font %tmp.288;
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 473; @position = 18; ]
-            const justification;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 474; @position = 18; ]
-            const font;
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 477; ]
-        module system_icon_light__search {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 477; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 478; @position = 18; ]
-            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_light__search.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 479; @position = 18; ]
-            const dithering as String = "none";
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 482; ]
-        module prompt_size__title_icon {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 482; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 483; @position = 18; ]
-            const scaleX as Float = 0.15;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 484; @position = 18; ]
-            const scaleRelativeTo as String = "screen";
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 487; ]
-        module system_icon_dark__warning {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 487; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 488; @position = 18; ]
-            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_dark__warning.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 489; @position = 18; ]
-            const compress as String = "true";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 490; @position = 18; ]
-            const dithering as String = "none";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 491; @position = 18; ]
-            const automaticPalette as String = "true";
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 494; ]
-        module prompt_loc__title_icon {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 494; ]
-            <init> {
-            }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 495; @position = 18; ]
-            const x as Number = 140;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 496; @position = 18; ]
-            const y as Number = 42;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 497; @position = 18; ]
-            const horizontalJustification as String = "center";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 498; @position = 18; ]
-            const verticalJustification as String = "center";
-        }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 501; ]
-        module prompt_color_dark__body {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 501; ]
-            <init> {
-[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 503 18 ]
+[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 144 18 ]
                 %tmp.289 = getm $.Toybox.Graphics;
                 %tmp.290 = getv %tmp.289 :COLOR_TRANSPARENT;
                 putv self :background %tmp.290;
             }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 502; @position = 18; ]
-            const color as Number = 0xFFFFFF;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 503; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 143; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 144; @position = 18; ]
             const background;
         }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 506; ]
-        module confirmation_icon__hint_delete {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 506; ]
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 147; ]
+        module prompt_size__title {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 147; ]
             <init> {
             }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 507; @position = 18; ]
-            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/confirmation_icon__hint_delete.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 508; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 148; @position = 18; ]
+            const width as Number = 224;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 149; @position = 18; ]
+            const height as Number = 42;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 152; ]
+        module system_icon_dark__hint_button_right_top {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 152; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 153; @position = 18; ]
+            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_dark__hint_button_right_top.svg";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 154; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 511; ]
-        module system_icon_light__hint_button_right_top {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 511; ]
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 157; ]
+        module confirmation_font__body {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 157; ]
+            <init> {
+[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 158 18 ]
+                %tmp.291 = getm $.Toybox.Graphics;
+                %tmp.292 = getv %tmp.291 :TEXT_JUSTIFY_CENTER;
+                %tmp.293 = getm $.Toybox.Graphics;
+                %tmp.294 = getv %tmp.293 :TEXT_JUSTIFY_VCENTER;
+                %tmp.295 = bitor %tmp.292 %tmp.294;
+                putv self :justification %tmp.295;
+[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 159 18 ]
+                %tmp.296 = getm $.Toybox.Graphics;
+                %tmp.297 = getv %tmp.296 :FONT_TINY;
+                putv self :font %tmp.297;
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 158; @position = 18; ]
+            const justification;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 159; @position = 18; ]
+            const font;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 162; ]
+        module system_icon_dark__hint_button_left_middle {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 162; ]
             <init> {
             }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 512; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 163; @position = 18; ]
+            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_dark__hint_button_left_middle.svg";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 164; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 167; ]
+        module system_color_dark__background {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 167; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 168; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 169; @position = 18; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 172; ]
+        module system_icon_light__cancel {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 172; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 173; @position = 18; ]
+            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_light__cancel.svg";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 174; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 177; ]
+        module system_size__launch_icon {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 177; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 178; @position = 18; ]
+            const scaleX as Number = 40;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 179; @position = 18; ]
+            const scaleY as Number = 40;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 180; @position = 18; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 183; ]
+        module confirmation_input__confirm {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 183; ]
+            <init> {
+[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 184 18 ]
+                %tmp.298 = getm $.Toybox.WatchUi;
+                %tmp.299 = getv %tmp.298 :KEY_ENTER;
+                putv self :button %tmp.299;
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 184; @position = 18; ]
+            const button;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 187; ]
+        module system_icon_light__about {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 187; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 188; @position = 18; ]
+            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_light__about.svg";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 189; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 192; ]
+        module system_size__toast_icon {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 192; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 193; @position = 18; ]
+            const scaleX as Number = 40;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 194; @position = 18; ]
+            const scaleY as Number = 40;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 195; @position = 18; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 198; ]
+        module confirmation_icon__hint_reject {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 198; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 199; @position = 18; ]
+            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/confirmation_icon__hint_reject.svg";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 200; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 203; ]
+        module system_icon_light__hint_action_menu {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 203; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 204; @position = 18; ]
             const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_light__hint_button_right_top.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 513; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 205; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 516; ]
-        module confirmation_size__body {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 516; ]
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 208; ]
+        module prompt_font__body_with_title {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 208; ]
+            <init> {
+[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 209 18 ]
+                %tmp.300 = getm $.Toybox.Graphics;
+                %tmp.301 = getv %tmp.300 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.301;
+[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 210 18 ]
+                %tmp.302 = getm $.Toybox.Graphics;
+                %tmp.303 = getv %tmp.302 :FONT_TINY;
+                putv self :font %tmp.303;
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 209; @position = 18; ]
+            const justification;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 210; @position = 18; ]
+            const font;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 213; ]
+        module confirmation_loc__body {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 213; ]
             <init> {
             }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 517; @position = 18; ]
-            const width as Number = 168;
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 518; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 214; @position = 18; ]
+            const x as Number = 56;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 215; @position = 18; ]
+            const y as Number = 56;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 218; ]
+        module prompt_color_dark__background {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 218; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 219; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 220; @position = 18; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 223; ]
+        module system_loc__hint_action_menu {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 223; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 224; @position = 18; ]
+            const x as Number = 242;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 225; @position = 18; ]
+            const y as Number = 52;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 228; ]
+        module confirmation_icon__hint_confirm {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 228; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 229; @position = 18; ]
+            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/confirmation_icon__hint_completion.svg";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 230; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 233; ]
+        module confirmation_loc__hint_reject {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 233; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 234; @position = 18; ]
+            const x as Number = 11;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 235; @position = 18; ]
+            const y as Number = 185;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 236; @position = 18; ]
+            const horizontalJustification as String = "left";
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 239; ]
+        module system_loc__hint_button_left_middle {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 239; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 240; @position = 18; ]
+            const x as Number = 3;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 241; @position = 18; ]
+            const y as Number = 116;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 244; ]
+        module activity_color_dark__background {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 244; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 245; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 246; @position = 18; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 249; ]
+        module prompt_size__body_no_title {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 249; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 250; @position = 18; ]
+            const width as Number = 224;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 251; @position = 18; ]
+            const height as Number = 224;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 254; ]
+        module system_icon_light__hint_button_left_bottom {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 254; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 255; @position = 18; ]
+            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_light__hint_button_left_bottom.svg";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 256; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 259; ]
+        module system_size__menu_icon {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 259; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 260; @position = 18; ]
+            const scaleX as Number = 40;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 261; @position = 18; ]
+            const scaleY as Number = 40;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 262; @position = 18; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 265; ]
+        module system_icon_destructive__warning {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 265; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 266; @position = 18; ]
+            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_destructive__warning.svg";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 267; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 270; ]
+        module system_icon_light__hint_button_left_top {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 270; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 271; @position = 18; ]
+            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_light__hint_button_left_top.svg";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 272; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 275; ]
+        module prompt_color_light__background {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 275; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 276; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 277; @position = 18; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 280; ]
+        module system_loc__hint_button_right_middle {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 280; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 281; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 284; ]
+        module system_icon_dark__cancel {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 284; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 285; @position = 18; ]
+            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_dark__cancel.svg";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 286; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 287; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 288; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 291; ]
+        module confirmation_input__delete {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 291; ]
+            <init> {
+[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 292 18 ]
+                %tmp.304 = getm $.Toybox.WatchUi;
+                %tmp.305 = getv %tmp.304 :KEY_ENTER;
+                putv self :button %tmp.305;
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 292; @position = 18; ]
+            const button;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 295; ]
+        module prompt_size__body_with_title {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 295; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 296; @position = 18; ]
+            const width as Number = 224;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 297; @position = 18; ]
             const height as Number = 168;
         }
-        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 521; ]
-        module system_icon_positive__check {
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 521; ]
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 300; ]
+        module system_loc__hint_button_right_top {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 300; ]
             <init> {
             }
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 522; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 301; @position = 18; ]
+            const x as Number = 242;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 302; @position = 18; ]
+            const y as Number = 52;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 305; ]
+        module system_icon_dark__hint_button_left_top {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 305; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 306; @position = 18; ]
+            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_dark__hint_button_left_top.svg";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 307; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 310; ]
+        module system_color_light__text {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 310; ]
+            <init> {
+[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 312 18 ]
+                %tmp.306 = getm $.Toybox.Graphics;
+                %tmp.307 = getv %tmp.306 :COLOR_TRANSPARENT;
+                putv self :background %tmp.307;
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 311; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 312; @position = 18; ]
+            const background;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 315; ]
+        module system_input__action_menu {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 315; ]
+            <init> {
+[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 316 18 ]
+                %tmp.308 = getm $.Toybox.WatchUi;
+                %tmp.309 = getv %tmp.308 :KEY_ENTER;
+                putv self :button %tmp.309;
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 316; @position = 18; ]
+            const button;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 319; ]
+        module system_icon_light__save {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 319; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 320; @position = 18; ]
+            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_light__save.svg";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 321; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 324; ]
+        module system_icon_light__check {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 324; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 325; @position = 18; ]
+            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_light__check.svg";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 326; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 329; ]
+        module prompt_color_light__body {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 329; ]
+            <init> {
+[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 331 18 ]
+                %tmp.310 = getm $.Toybox.Graphics;
+                %tmp.311 = getv %tmp.310 :COLOR_TRANSPARENT;
+                putv self :background %tmp.311;
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 330; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 331; @position = 18; ]
+            const background;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 334; ]
+        module system_loc__subwindow {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 334; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 335; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 338; ]
+        module confirmation_input__reject {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 338; ]
+            <init> {
+[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 339 18 ]
+                %tmp.312 = getm $.Toybox.WatchUi;
+                %tmp.313 = getv %tmp.312 :KEY_DOWN;
+                putv self :button %tmp.313;
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 339; @position = 18; ]
+            const button;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 342; ]
+        module system_icon_light__warning {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 342; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 343; @position = 18; ]
+            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_light__warning.svg";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 344; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 347; ]
+        module system_icon_light__revert {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 347; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 348; @position = 18; ]
+            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_light__revert.svg";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 349; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 352; ]
+        module system_size__subwindow {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 352; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 353; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 356; ]
+        module confirmation_color_light__body {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 356; ]
+            <init> {
+[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 358 18 ]
+                %tmp.314 = getm $.Toybox.Graphics;
+                %tmp.315 = getv %tmp.314 :COLOR_TRANSPARENT;
+                putv self :background %tmp.315;
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 357; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 358; @position = 18; ]
+            const background;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 361; ]
+        module activity_color_light__background {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 361; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 362; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 363; @position = 18; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 366; ]
+        module system_icon_dark__check {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 366; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 367; @position = 18; ]
+            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_dark__check.svg";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 368; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 369; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 370; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 373; ]
+        module confirmation_loc__hint_keep {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 373; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 374; @position = 18; ]
+            const x as Number = 11;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 375; @position = 18; ]
+            const y as Number = 185;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 376; @position = 18; ]
+            const horizontalJustification as String = "left";
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 379; ]
+        module confirmation_loc__hint_delete {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 379; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 380; @position = 18; ]
+            const x as Number = 226;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 381; @position = 18; ]
+            const y as Number = 52;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 384; ]
+        module system_size__screen {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 384; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 385; @position = 18; ]
+            const width as Number = 280;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 386; @position = 18; ]
+            const height as Number = 280;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 389; ]
+        module system_color_light__background {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 389; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 390; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 391; @position = 18; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 394; ]
+        module system_icon_light__hint_button_left_middle {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 394; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 395; @position = 18; ]
+            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_light__hint_button_left_middle.svg";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 396; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 399; ]
+        module confirmation_loc__hint_confirm {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 399; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 400; @position = 18; ]
+            const x as Number = 226;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 401; @position = 18; ]
+            const y as Number = 52;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 404; ]
+        module system_icon_dark__hint_button_right_bottom {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 404; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 405; @position = 18; ]
+            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_dark__hint_button_right_bottom.svg";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 406; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 409; ]
+        module system_icon_dark__revert {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 409; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 410; @position = 18; ]
+            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_dark__revert.svg";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 411; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 412; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 413; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 416; ]
+        module activity_color_dark__text {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 416; ]
+            <init> {
+[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 418 18 ]
+                %tmp.316 = getm $.Toybox.Graphics;
+                %tmp.317 = getv %tmp.316 :COLOR_TRANSPARENT;
+                putv self :background %tmp.317;
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 417; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 418; @position = 18; ]
+            const background;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 421; ]
+        module confirmation_input__keep {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 421; ]
+            <init> {
+[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 422 18 ]
+                %tmp.318 = getm $.Toybox.WatchUi;
+                %tmp.319 = getv %tmp.318 :KEY_DOWN;
+                putv self :button %tmp.319;
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 422; @position = 18; ]
+            const button;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 425; ]
+        module prompt_loc__body_with_title {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 425; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 426; @position = 18; ]
+            const x as Number = 28;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 427; @position = 18; ]
+            const y as Number = 84;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 430; ]
+        module system_icon_dark__question {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 430; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 431; @position = 18; ]
+            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_dark__question.svg";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 432; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 433; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 434; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 437; ]
+        module system_icon_light__discard {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 437; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 438; @position = 18; ]
+            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_light__discard.svg";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 439; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 442; ]
+        module device_info {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 442; ]
+            <init> {
+[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 444 18 ]
+                %tmp.320 = getm $.Toybox.System;
+                %tmp.321 = getv %tmp.320 :SCREEN_SHAPE_ROUND;
+                putv self :screenShape %tmp.321;
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 443; @position = 18; ]
+            const screenWidth as Number = 280;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 444; @position = 18; ]
+            const screenShape;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 445; @position = 18; ]
+            const hasNightMode as Boolean = false;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 446; @position = 18; ]
+            const screenHeight as Number = 280;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 447; @position = 18; ]
+            const hasTouchScreen as Boolean = false;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 450; ]
+        module system_icon_dark__search {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 450; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 451; @position = 18; ]
+            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_dark__search.svg";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 452; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 453; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 454; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 457; ]
+        module activity_color_light__text {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 457; ]
+            <init> {
+[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 459 18 ]
+                %tmp.322 = getm $.Toybox.Graphics;
+                %tmp.323 = getv %tmp.322 :COLOR_TRANSPARENT;
+                putv self :background %tmp.323;
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 458; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 459; @position = 18; ]
+            const background;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 462; ]
+        module confirmation_icon__hint_keep {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 462; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 463; @position = 18; ]
+            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/confirmation_icon__hint_keep.svg";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 464; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 467; ]
+        module system_icon_dark__save {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 467; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 468; @position = 18; ]
+            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_dark__save.svg";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 469; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 470; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 471; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 474; ]
+        module prompt_font__body_no_title {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 474; ]
+            <init> {
+[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 475 18 ]
+                %tmp.324 = getm $.Toybox.Graphics;
+                %tmp.325 = getv %tmp.324 :TEXT_JUSTIFY_CENTER;
+                %tmp.326 = getm $.Toybox.Graphics;
+                %tmp.327 = getv %tmp.326 :TEXT_JUSTIFY_VCENTER;
+                %tmp.328 = bitor %tmp.325 %tmp.327;
+                putv self :justification %tmp.328;
+[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 476 18 ]
+                %tmp.329 = getm $.Toybox.Graphics;
+                %tmp.330 = getv %tmp.329 :FONT_TINY;
+                putv self :font %tmp.330;
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 475; @position = 18; ]
+            const justification;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 476; @position = 18; ]
+            const font;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 479; ]
+        module system_icon_light__search {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 479; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 480; @position = 18; ]
+            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_light__search.svg";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 481; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 484; ]
+        module prompt_size__title_icon {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 484; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 485; @position = 18; ]
+            const scaleX as Float = 0.15;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 486; @position = 18; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 489; ]
+        module system_icon_dark__warning {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 489; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 490; @position = 18; ]
+            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_dark__warning.svg";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 491; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 492; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 493; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 496; ]
+        module prompt_loc__title_icon {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 496; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 497; @position = 18; ]
+            const x as Number = 140;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 498; @position = 18; ]
+            const y as Number = 42;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 499; @position = 18; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 500; @position = 18; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 503; ]
+        module prompt_color_dark__body {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 503; ]
+            <init> {
+[ "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen" 505 18 ]
+                %tmp.331 = getm $.Toybox.Graphics;
+                %tmp.332 = getv %tmp.331 :COLOR_TRANSPARENT;
+                putv self :background %tmp.332;
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 504; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 505; @position = 18; ]
+            const background;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 508; ]
+        module confirmation_icon__hint_delete {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 508; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 509; @position = 18; ]
+            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/confirmation_icon__hint_delete.svg";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 510; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 513; ]
+        module system_icon_light__hint_button_right_top {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 513; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 514; @position = 18; ]
+            const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_light__hint_button_right_top.svg";
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 515; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 518; ]
+        module confirmation_size__body {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 518; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 519; @position = 18; ]
+            const width as Number = 168;
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 520; @position = 18; ]
+            const height as Number = 168;
+        }
+        [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 523; ]
+        module system_icon_positive__check {
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 523; ]
+            <init> {
+            }
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 524; @position = 18; ]
             const filename as String = "/home/kryt/.Garmin/ConnectIQ/Devices/fenix6xpro/system_icon_positive__check.svg";
-            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 523; @position = 18; ]
+            [ @file = "/home/kryt/dev/garmin/clearFace/bin/gen/006-B3291-00/source/Rez.mcgen"; @line = 525; @position = 18; ]
             const dithering as String = "none";
         }
     }

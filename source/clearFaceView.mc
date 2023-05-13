@@ -6,6 +6,8 @@ using Toybox.System;
 using Toybox.Time.Gregorian;
 using Toybox.Time.Gregorian as Date;
 using Toybox.ActivityMonitor;
+using Toybox.Activity;
+using Toybox.Weather;
 
 class clearFaceView extends WatchUi.WatchFace {
     function iso_week_number(year, month, day) {
@@ -103,6 +105,32 @@ class clearFaceView extends WatchUi.WatchFace {
         var stepsString=activity_stats.steps/1000;
         var view_recovery = View.findDrawableById("Recovery") as Text;
         view_recovery.setText(recoveryString+"H "+floorsString+"F "+stepsString+"kS");
+        var view_sun = View.findDrawableById("Sun") as Text;
+        var sun_str=("SR ---- SS ----"); 
+        //tu ustalamy położenie a następnie czas SR wschodu i SS zachodu słońca
+        var cur_pos = Activity.Info.currentLocation;
+        //sun_str=position.toString();
+        //System.println(cur_pos);
+        if (cur_pos == null) {
+            cur_pos =  new Position.Location(
+            {
+                :latitude => 51.25,
+                :longitude => 22.57,
+                :format => :degrees
+            }
+            );
+        } 
+        var sunrise_moment = Weather.getSunrise(cur_pos, now);
+        var sunrise_date = Gregorian.info(sunrise_moment, Time.FORMAT_MEDIUM);
+        var sunrise_str = Lang.format("SR $1$$2$", [sunrise_date.hour.format("%02d"), sunrise_date.min.format("%02d")]);
+        
+        var sunset_moment = Weather.getSunset(cur_pos, now);
+        var sunset_date = Gregorian.info(sunset_moment, Time.FORMAT_MEDIUM);
+        var sunset_str = Lang.format(" SS $1$$2$", [sunset_date.hour.format("%02d"), sunset_date.min.format("%02d")]);
+        
+        sun_str=sunrise_str+sunset_str;
+        //System.println(sun_str);
+        view_sun.setText(sun_str);
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
     }
