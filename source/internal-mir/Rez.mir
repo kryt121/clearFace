@@ -186,7 +186,7 @@ _home_kryt_dev_garmin_clearFace_source_gen_006_B3291_00_source_Rez_mcgen_19_73_s
             %tmp.153 = aputv %tmp.152 %tmp.148 %tmp.151;
             %tmp.155 = const :locY;
             %tmp.156 = 280;
-            %tmp.157 = 60;
+            %tmp.157 = 72;
             %tmp.158 = 100.0;
             %tmp.159 = div %tmp.157 %tmp.158;
             %tmp.160 = mul %tmp.156 %tmp.159;
@@ -222,7 +222,7 @@ _home_kryt_dev_garmin_clearFace_source_gen_006_B3291_00_source_Rez_mcgen_19_73_s
             %tmp.191 = aputv %tmp.190 %tmp.186 %tmp.189;
             %tmp.193 = const :locY;
             %tmp.194 = 280;
-            %tmp.195 = 72;
+            %tmp.195 = 60;
             %tmp.196 = 100.0;
             %tmp.197 = div %tmp.195 %tmp.196;
             %tmp.198 = mul %tmp.194 %tmp.197;

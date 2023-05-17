@@ -78,11 +78,13 @@ class clearFaceView extends WatchUi.WatchFace {
         var timeString = Lang.format("$1$ $2$", [clockTime.hour.format("%02d"), clockTime.min.format("%02d")]);
         var view = View.findDrawableById("TimeLabel") as Text;
         view.setText(timeString);
-
+        
+        var battery_array=[240, 159, 148, 139];
+        var battery_str= StringUtil.utf8ArrayToString(battery_array);
         var view_battery=View.findDrawableById("Battery") as Text;
         var stats = System.getSystemStats();
         var battery_string = stats.battery.format("%02d");
-        view_battery.setText(battery_string + "%");
+        view_battery.setText(battery_str+battery_string + "%");
         //data
         
         
@@ -104,7 +106,14 @@ class clearFaceView extends WatchUi.WatchFace {
         var floorsString=activity_stats.floorsClimbed;
         var stepsString=activity_stats.steps/1000;
         var view_recovery = View.findDrawableById("Recovery") as Text;
-        view_recovery.setText(recoveryString+"H "+floorsString+"F "+stepsString+"kS");
+
+        var rec_array=[240, 159, 153, 138];
+        var rec_str= StringUtil.utf8ArrayToString(rec_array);
+        var floor_array=[240, 159, 151, 188];
+        var floor_str= StringUtil.utf8ArrayToString(floor_array);
+        var step_array=[240, 159, 145, 163];
+        var step_str= StringUtil.utf8ArrayToString(step_array);
+        view_recovery.setText(rec_str+recoveryString+"H "+floorsString+floor_str+" "+stepsString+"k"+step_str);
         var view_sun = View.findDrawableById("Sun") as Text;
         var sun_str=("SR ---- SS ----"); 
         //tu ustalamy położenie a następnie czas SR wschodu i SS zachodu słońca
@@ -120,13 +129,17 @@ class clearFaceView extends WatchUi.WatchFace {
             }
             );
         } 
+        var up_array=[240, 159, 148, 133];
+        var up_str= StringUtil.utf8ArrayToString(up_array);
+        var down_array=[240, 159, 140, 153];
+        var down_str= StringUtil.utf8ArrayToString(down_array);
         var sunrise_moment = Weather.getSunrise(cur_pos, now);
         var sunrise_date = Gregorian.info(sunrise_moment, Time.FORMAT_MEDIUM);
-        var sunrise_str = Lang.format("SR $1$$2$", [sunrise_date.hour.format("%02d"), sunrise_date.min.format("%02d")]);
+        var sunrise_str = Lang.format(up_str+"$1$$2$", [sunrise_date.hour.format("%02d"), sunrise_date.min.format("%02d")]);
         
         var sunset_moment = Weather.getSunset(cur_pos, now);
         var sunset_date = Gregorian.info(sunset_moment, Time.FORMAT_MEDIUM);
-        var sunset_str = Lang.format(" SS $1$$2$", [sunset_date.hour.format("%02d"), sunset_date.min.format("%02d")]);
+        var sunset_str = Lang.format(down_str+"$1$$2$", [sunset_date.hour.format("%02d"), sunset_date.min.format("%02d")]);
         
         sun_str=sunrise_str+sunset_str;
         //System.println(sun_str);
